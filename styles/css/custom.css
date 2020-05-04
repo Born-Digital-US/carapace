@@ -3,3 +3,13 @@
  * Use this file to override styles if you feel uncomfortable editing
  * component stylesheets.
  ============================================================================ */
+
+.block-social__content a {
+  display: inline-block;
+  line-height: 0;
+}
+
+.block-social__content a svg {
+  margin: 0.325em;
+  fill: currentColor;
+}
