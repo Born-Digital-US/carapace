@@ -12,6 +12,8 @@
 
   .menu__link {
     display: block;
+    font-weight: $font-weight-bold;
+    @include output-rhythm(font-size, $medium * 1.25);
     @include output-rhythm(padding, $xxxx-small 0);
     //border-bottom: $border-width $border-style;
 
@@ -84,6 +86,3 @@
     //border-top: $border-width $border-style;
   }
 }
-
-
-

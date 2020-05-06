@@ -11,7 +11,8 @@
 .site-branding {
   display: flex;
   flex-wrap: wrap;
-  align-items: baseline;
+  align-items: center;
+  @include output-rhythm(padding-top, $medium);
 
   &__text,
   &__name,
@@ -30,18 +31,16 @@
 
   // wrapper around site name and slogan (byline)
   &__text {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
+    display: block;
     margin: 0;
   }
 
   // site name
   &__name {
-    @include output-rhythm(font-size, $medium * 1.5);
+    @include output-rhythm(font-size, $medium * 1.75);
 
     @media #{$wide} {
-      @include output-rhythm(font-size, $medium * 2);
+      @include output-rhythm(font-size, $medium * 2.25);
     }
 
     @include output-rhythm(padding-#{$flow-to}, $medium);
@@ -66,9 +65,8 @@
 
   // site slogan
   &__slogan {
-    //@include output-rhythm(padding, $xxx-small 0);
-    font-style: $font-weight-normal;
+    font-style: normal;
+    @include output-rhythm(font-size, $medium * 1.25);
+    @include output-rhythm(padding, $small 0 0);
   }
 }
-
-

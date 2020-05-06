@@ -9,7 +9,7 @@
   * {
     background: transparent !important;
     -webkit-box-shadow: none;
-    box-shadow: none;
+            box-shadow: none;
     text-shadow: none;
     color: #000;
     /* Black prints faster: h5bp.com/s */
@@ -53,7 +53,7 @@
   a,
   a:visited {
     text-decoration: underline;
-    color: #3188d1 !important;
+    color: #0c6170 !important;
   }
   .site-branding a,
   .node__title a {

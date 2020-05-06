@@ -4,7 +4,7 @@
 /* Override Font Awesome classes. */
 .fa-border {
   border: solid 1px;
-  border-radius: 0;
+  border-radius: 0.125em;
 }
 
 /* Hide in-content icons if Font Awesome fails to load. */

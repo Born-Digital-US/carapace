@@ -8,8 +8,7 @@
   text-align: center;
 }
 
-.pager ul,
-.pager ol {
+.pager ul, .pager ol {
   margin: 0;
   padding: 0;
 }
@@ -29,7 +28,6 @@
 }
 
 .pager__item {
-  margin: 1px;
   display: inline-block;
 }
 
@@ -54,26 +52,25 @@
   .pager__items__num-pages {
     text-align: center;
   }
-  .pager__items__first-previous {
-    float: left;
-  }
-  .pager__items__next-last {
-    float: right;
-  }
 }
 
 .pager__link {
   display: inline-block;
-  border-radius: 0;
+  border-radius: 0.125em;
+  border: 1px solid;
   -webkit-transition: all, 0.2s, ease-in-out;
   -o-transition: all, 0.2s, ease-in-out;
   transition: all, 0.2s, ease-in-out;
+  min-width: 1.75em;
   padding: 0.125rem 0.4375rem 0;
-  border: 0;
 }
 
-.pager__link:focus,
-.pager__link:hover {
+.pager__link:focus, .pager__link:hover {
   text-decoration: none;
+}
+
+.pager__link--is-active {
+  color: #1a2747;
+  text-decoration: underline;
 }
 /*# sourceMappingURL=pagers.css.map */

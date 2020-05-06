@@ -11,15 +11,14 @@
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-align: baseline;
-  -ms-flex-align: baseline;
-  align-items: baseline;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 1rem;
 }
 
-.site-branding__text,
-.site-branding__name,
-.site-branding__slogan {
+.site-branding__text, .site-branding__name, .site-branding__slogan {
   display: block;
 }
 
@@ -29,26 +28,19 @@
 }
 
 .site-branding__text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-align: baseline;
-  -ms-flex-align: baseline;
-  align-items: baseline;
+  display: block;
   margin: 0;
 }
 
 .site-branding__name {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   padding-right: 1rem;
   font-weight: 700;
 }
 
 @media all and (min-width: 60.063em) {
   .site-branding__name {
-    font-size: 2rem;
+    font-size: 2.25rem;
   }
 }
 
@@ -56,12 +48,13 @@
   margin-right: -0.2em;
 }
 
-.site-branding__name-link:hover,
-.site-branding__name-link:focus {
+.site-branding__name-link:hover, .site-branding__name-link:focus {
   text-decoration: none;
 }
 
 .site-branding__slogan {
-  font-style: 400;
+  font-style: normal;
+  font-size: 1.25rem;
+  padding: 0.75rem 0 0;
 }
 /*# sourceMappingURL=block--branding.css.map */

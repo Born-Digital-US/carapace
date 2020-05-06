@@ -34,7 +34,34 @@ $info = [
   // Schemes.
   'schemes' => [
     'default' => [
-      'title' => t('carapace (default)'),
+      'title' => t('Basic (default)'),
+      'colors' => [
+        'base'                              => '#1a2747',
+        'text'                              => '#1a2747',
+        'textbackground'                    => '#dbf5f0',
+        'link'                              => '#0c6170',
+        'body'                              => '#1a2747',
+        'page'                              => '#ffffff',
+        'document'                          => '#ffffff',
+        'borders'                           => '#e5e5e5',
+        'borderslight'                      => '#f5f5f5',
+        'leaderboardbg'                     => '#0c6170',
+        'leaderboardtx'                     => '#ffffff',
+        'headerbg'                          => '#dbf5f0',
+        'headertx'                          => '#0c6170',
+        'sitename'                          => '#0c6170',
+        'navbarbg'                          => '#dbf5f0',
+        'navbartx'                          => '#0c6170',
+        'footerbg'                          => '#dbf5f0',
+        'footertx'                          => '#0c6170',
+        'sidebarblockheaderbg'              => '#a4e5e0',
+        'sidebarblockbodybg'                => '#dbf5f0',
+        'buttontx'                          => '#ffffff',
+        'buttonbg'                          => '#0c6170',
+      ],
+    ],
+    'carapace' => [
+      'title' => t('Carapace'),
       'colors' => [
         'base'                              => '#140404',
         'text'                              => '#5d5d5d',
@@ -120,6 +147,7 @@ $info = [
   'css' => [
     'styles/css/components/color.css',
     'styles/css/components/tabs.css',
+    'styles/scss/components/color.scss',
   ],
 
   // Files to copy.

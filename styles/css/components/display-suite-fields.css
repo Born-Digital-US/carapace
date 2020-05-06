@@ -13,8 +13,7 @@
   clear: both;
 }
 
-.field-node--node-link:before,
-.field-node--node-link:after {
+.field-node--node-link:before, .field-node--node-link:after {
   content: " ";
   display: table;
 }
@@ -25,7 +24,7 @@
 
 .field-node--node-link a {
   padding: 0.3125rem 0.5rem;
-  border-radius: 0;
+  border-radius: 0.125em;
   font-size: 0.857rem;
   line-height: 1.5rem;
 }

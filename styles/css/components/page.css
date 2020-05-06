@@ -43,11 +43,11 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
 }
 
 @media all and (max-width: 45em) {
@@ -97,7 +97,9 @@
 }
 
 .l-header + .l-navbar .regions {
-  border-top: 0;
+  border-bottom-width: 0.9375em;
+  border-bottom-color: #dbf5f0;
+  border-bottom-style: solid;
 }
 
 #navbar.headroom--not-top {
@@ -129,26 +131,22 @@
   margin-bottom: 0;
 }
 
-.pr-main__sidebar-first .block__title,
-.pr-main__sidebar-second .block__title {
+.pr-main__sidebar-first .block__title, .pr-main__sidebar-second .block__title {
   margin: 0;
-  border-radius: 0 0 0 0;
+  border-radius: 0.125em 0.125em 0 0;
 }
 
-.pr-main__sidebar-first .block__content,
-.pr-main__sidebar-second .block__content {
-  border-radius: 0 0 0 0;
+.pr-main__sidebar-first .block__content, .pr-main__sidebar-second .block__content {
+  border-radius: 0 0 0.125em 0.125em;
 }
 
 .pr-main__sidebar-first .block__title,
-.pr-main__sidebar-first .block__content,
-.pr-main__sidebar-second .block__title,
+.pr-main__sidebar-first .block__content, .pr-main__sidebar-second .block__title,
 .pr-main__sidebar-second .block__content {
   padding: 0.75rem;
 }
 
-.pr-main__sidebar-first .block-search .block__content,
-.pr-main__sidebar-second .block-search .block__content {
+.pr-main__sidebar-first .block-search .block__content, .pr-main__sidebar-second .block-search .block__content {
   padding: 0;
 }
 
@@ -169,11 +167,11 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
 }
 
 .pr-footercols + .pr-footer .block {

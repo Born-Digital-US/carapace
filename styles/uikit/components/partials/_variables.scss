@@ -152,19 +152,19 @@ $base-color               : #000000;
 
 // Text colors
 // -----------------------------------------------------------------------------
-$text-color               : #404040;
-$text-color-light         : #808080;
-$text-color-medium        : #5c5c5c;
+$text-color               : #1a2747;
+$text-color-light         : #dbf5f0;
+$text-color-medium        : #0c6170;
 
-$text-background-color-light  : #f2f2f2;
-$text-background-color-normal : #ededed;
-$text-background-color-dark   : #e8e8e8;
+$text-background-color-light  : #dbf5f0;
+$text-background-color-normal : #ffffff;
+$text-background-color-dark   : #0c6170;
 
-$site-name : #434343;
+$site-name : #0c6170;
 
 // Link colors
 // -----------------------------------------------------------------------------
-$link-color               : #3188d1;
+$link-color               : #0c6170;
 $link-hover-color         : $link-color;
 $link-active-color        : $link-color;
 $link-visited-color       : $link-color;
@@ -175,23 +175,24 @@ $link-visited-hover-color : $link-color;
 // -----------------------------------------------------------------------------
 $border-width             : 1px;
 $border-style             : solid;
-$border-color             : #cccccc;
-$border-color-light       : #ebebeb;
-$border-radius            : 0;
+$border-color             : #e5e5e5;
+$border-color-light       : #f5f5f5;
+$border-radius            :  0.125em;
+$border-radius-round      : 1em;
 
 
 // Success colors
 // -----------------------------------------------------------------------------
-$success-text-color       : #325e1c;
-$success-border-color     : #c9e1bd;
-$success-background-color : #f3faef;
+$success-text-color       : #1a2747;
+$success-border-color     : #a4e5e0;
+$success-background-color : #dbf5f0;
 
 
 // Warning colors
 // -----------------------------------------------------------------------------
-$warning-text-color       : #734c00;
-$warning-border-color     : #f4daa6;
-$warning-background-color : #fdf8ed;
+$warning-text-color       : #1a2747;
+$warning-border-color     : #a4e5e0;
+$warning-background-color : #dbf5f0;
 
 
 // Error colors
@@ -232,10 +233,10 @@ $even-color : $text-background-color-normal;
 // -----------------------------------------------------------------------------
 
 // body element.
-$body-background-color    : #333333;
+$body-background-color    : #ffffff;
 
 // .page, an inner-body full width page background.
-$page-background-color    : #e8e8e8;
+$page-background-color    : #ffffff;
 
 // Wrapper around regions, the max-width is set on this wrapper.
 $regions-background-color : #ffffff;
@@ -249,16 +250,16 @@ $page-row-fullwidth : false;
 $regions-padding    : $medium;
 
 // Leaderboard.
-$page-leaderboard-color                : #f5f5f5;
-$page-leaderboard-background-color     : #363636;
+$page-leaderboard-color                : #ffffff;
+$page-leaderboard-background-color     : #0c6170;
 
 // Header.
-$page-header-color                     : #a9a9a9;
-$page-header-background-color          : #f0f0f0;
+$page-header-color                     : #0c6170;
+$page-header-background-color          : #dbf5f0;
 
 // Navbar.
-$page-navbar-color                     : #fafafa;
-$page-navbar-background-color          : #171717;
+$page-navbar-color                     : #0c6170;
+$page-navbar-background-color          : #dbf5f0;
 $page-navbar-hover-background-color    : $page-navbar-background-color;
 
 // Highlighted.
@@ -286,8 +287,8 @@ $page-subfeatures-color                : $text-color;
 $page-subfeatures-background-color     : $regions-background-color;
 
 // Footer (+ footer cols)
-$page-footer-color                     : #e3e3e3;
-$page-footer-background-color          : #292929;
+$page-footer-color                     : #0c6170;
+$page-footer-background-color          : #dbf5f0;
 
 
 // Branding
@@ -307,9 +308,9 @@ $block-title-background-color      : #ffffff;
 $block-link-color                  : $link-color;
 
 // Sidebar blocks
-$sidebar-block-header-background-color : #e0e0e0;
+$sidebar-block-header-background-color : #a4e5e0;
 $sidebar-block-header-color            : $text-color;
-$sidebar-block-body-background-color   : #f7f7f7;
+$sidebar-block-body-background-color   : #dbf5f0;
 $sidebar-block-body-color              : $text-color;
 
 
@@ -431,23 +432,28 @@ $vertical-tabs-selected-color        : $sidebar-block-body-background-color;
 // -----------------------------------------------------------------------------
 $button-text-align                 : center;
 
-$button-color                      : #fcfcfc;
+$button-color                      : $text-background-color-normal ;
 $button-hover-color                : $button-color;
 
-$button-background-color           : #999999;
+$button-background-color           : $text-color-medium;
 $button-background-hover-color     : $button-background-color;
 
 $button-border-color               : $button-background-color;
 $button-border-width               : $border-width;
 $button-border-style               : $border-style;
-$button-border-radius              : $border-radius;
+$button-border-radius              : $border-radius-round;
 
-$button-box-shadow                 : false;
+$button-box-shadow                 : true;
 
 // Button Primary
 $button-primary-text-color         : $button-color;
 $button-primary-background-color   : $link-color;
 $button-primary-border-color       : $link-color;
+
+// Button Secondary
+$button-secondary-text-color       : $link-color;
+$button-secondary-background-color : $text-background-color-light;
+$button-secondary-border-color     : $text-background-color-light;
 
 
 // Tabs
@@ -654,6 +660,3 @@ $patterns: (
   pattern-15,
   pattern-16
 ); // A list of pattern file names
-
-
-

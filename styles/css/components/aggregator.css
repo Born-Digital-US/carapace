@@ -8,11 +8,10 @@
 .aggregator-item {
   margin-bottom: 1rem;
   padding: 1rem;
-  border-radius: 0;
+  border-radius: 0.125em;
 }
 
-.aggregator-item:before,
-.aggregator-item:after {
+.aggregator-item:before, .aggregator-item:after {
   content: " ";
   display: table;
 }

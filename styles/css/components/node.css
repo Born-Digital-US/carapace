@@ -7,11 +7,10 @@
  *    the root template is node.html.twig and the base selector is .node {}
  ============================================================================ */
 .node {
-  border-radius: 0;
+  border-radius: 0.125em;
 }
 
-.node:before,
-.node:after {
+.node:before, .node:after {
   content: " ";
   display: table;
 }
@@ -105,7 +104,7 @@
 
 .node__links ul.links.inline a {
   padding: 0.3125rem 0.5rem;
-  border-radius: 0;
+  border-radius: 0.125em;
   font-size: 0.857rem;
   line-height: 1.5rem;
   vertical-align: middle;

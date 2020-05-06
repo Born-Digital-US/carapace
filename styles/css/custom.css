@@ -12,4 +12,11 @@
 .block-social__content a svg {
   margin: 0.325em;
   fill: currentColor;
+  opacity: 1;
+}
+
+.block-social__content a:hover svg,
+.block-social__content a:focus svg
+ {
+  opacity: 0.9;
 }

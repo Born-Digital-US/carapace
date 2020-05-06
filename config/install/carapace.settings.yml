@@ -385,7 +385,7 @@ settings:
   max_width_value_footer: ''
   max_width_unit_footer: em
   page_classes_body: ''
-  page_classes_page: pattern-2
+  page_classes_page: ''
   page_classes_row_wrapper_messages: ''
   page_classes_row_container_messages: ''
   page_classes_row_wrapper_leaderboard: ''

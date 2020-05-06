@@ -165,6 +165,7 @@ figcaption {
 // Links.
 a {
   text-decoration: none;
+  font-weight: $font-weight-bold;
   cursor: pointer;
 
   &:active,
@@ -178,7 +179,7 @@ a {
 
   &:hover,
   &:focus {
-    text-decoration: none;
+    text-decoration: underline;
   }
 
   img {
@@ -221,7 +222,7 @@ blockquote {
 
   margin-#{$flow-to}: 0;
   border-#{$flow-from}: 5px solid;
-  
+
   &.simple-quote {
     border: 0 none;
     padding: 0;
@@ -321,6 +322,3 @@ pre {
 [hidden] {
   display: none;
 }
-
-
-

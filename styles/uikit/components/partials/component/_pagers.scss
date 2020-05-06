@@ -41,7 +41,6 @@
 
 // li class for every pager item in any list.
 .pager__item {
-  margin: 1px;
   display: inline-block;
 }
 
@@ -71,13 +70,6 @@
   .pager__items__num-pages {
     text-align: center;
   }
-
-  .pager__items__first-previous {
-    float: #{$flow-from};
-  }
-  .pager__items__next-last {
-    float: #{$flow-to};
-  }
 }
 
 
@@ -95,11 +87,10 @@
 .pager__link {
   display: inline-block;
   border-radius: $border-radius;
+  border: $border-width $border-style;
   transition: $global-transition;
+  min-width: 1.75em;
   @include output-rhythm(padding, 2px 7px 0);
-
-  border: 0;
-  //border: $border-width $border-style;
 
   &:focus,
   &:hover {
@@ -108,14 +99,11 @@
 }
 
 
-// Global padding for all pager links (anchors).
-.pager__link {
-
-}
-
-
 // Active or "current" link.
-.pager__link--is-active {}
+.pager__link--is-active {
+  color: $text-color;
+  text-decoration: underline;
+}
 
 
 // List item for the word "First"
@@ -155,5 +143,3 @@
 // Ellipsis are showing after the last numeric item.
 // E.g. 1 2 3... next last
 .pager__ellipsis--after {}
-
-

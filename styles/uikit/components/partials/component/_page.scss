@@ -123,7 +123,9 @@
 
 .l-header {
   + .l-navbar .regions {
-    border-top: 0;
+    border-bottom-width: $global-padding * 1.5;
+    border-bottom-color: $page-navbar-background-color;
+    border-bottom-style: solid;
   }
 }
 
@@ -270,7 +272,3 @@
     margin-top: 0;
   }
 }
-
-
-
-
