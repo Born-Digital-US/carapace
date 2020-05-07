@@ -27,6 +27,7 @@ regions:
   footer_first: 'Footer first'
   footer_second: 'Footer second'
   footer_third: 'Footer third'
+  footer_disclaimer: 'Footer disclaimer'
   page_top: 'Page top'
   page_bottom: 'Page bottom'
 tags: sub-theme

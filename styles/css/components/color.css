@@ -243,6 +243,27 @@ hr {
   color: inherit;
 }
 
+.pr-disclaimer {
+  color: #text-color;
+  background-color: #a4e5e0;
+}
+
+.pr-disclaimer .regions {
+  background-color: #a4e5e0;
+}
+
+.pr-disclaimer .block__content a {
+  color: inherit;
+}
+
+.pr-disclaimer .block__content a.active, .pr-disclaimer .block__content a:hover, .pr-disclaimer .block__content a:focus {
+  color: inherit;
+}
+
+.pr-disclaimer__rw {
+  border-color: #a4e5e0;
+}
+
 /**
  * AT attribution message
  *  - a toggle setting in the theme settings, you can turn it on/off using

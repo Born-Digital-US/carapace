@@ -170,6 +170,10 @@ $link-active-color        : $link-color;
 $link-visited-color       : $link-color;
 $link-visited-hover-color : $link-color;
 
+$link-alt-color           : #0e7e92;
+$link-alt-hover-color     : $link-alt-color;
+$link-alt-active-color    : $text-color;
+
 
 // Borders
 // -----------------------------------------------------------------------------
@@ -289,6 +293,10 @@ $page-subfeatures-background-color     : $regions-background-color;
 // Footer (+ footer cols)
 $page-footer-color                     : #0c6170;
 $page-footer-background-color          : #dbf5f0;
+
+// Footer (+ footer cols)
+$page-footer-disclaimer-color          : #text-color;
+$page-footer-disclaimer-background-color : #a4e5e0;
 
 
 // Branding

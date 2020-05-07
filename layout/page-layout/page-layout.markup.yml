@@ -113,3 +113,11 @@ rows:
       footer_third:
         label: 'Footer third'
         order: 3
+  disclaimer:
+    attributes:
+      role: contentinfo
+      id: footer-disclaimer
+    regions:
+      footer_disclaimer:
+        label: "Footer disclaimer"
+        order: 1

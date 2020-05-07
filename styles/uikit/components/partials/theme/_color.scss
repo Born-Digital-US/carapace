@@ -341,6 +341,27 @@ hr {
 }
 
 
+.pr-disclaimer {
+  color: $page-footer-disclaimer-color;
+  background-color: $page-footer-disclaimer-background-color;
+  @include page-row-background-color($page-footer-disclaimer-background-color, $page-row-fullwidth);
+
+  .block__content a {
+    color: inherit;
+
+    &.active,
+    &:hover,
+    &:focus {
+      color: inherit;
+    }
+  }
+
+  &__rw {
+    border-color: $page-footer-disclaimer-background-color;
+  }
+  &__footer-disclaimer {}
+}
+
 
 /**
  * AT attribution message
