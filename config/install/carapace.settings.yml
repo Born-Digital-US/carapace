@@ -525,7 +525,7 @@ settings:
   block_classes_ourfounder: ''
   nodetype_classes_book: ''
   nodetype_classes_forum: ''
-  shortcodes_patterns_enable: 1
+  shortcodes_patterns_enable: 0
   block_classes_socialmedialinks: ''
   block_classes_advertisehere: ''
   mimic_compatible: 1

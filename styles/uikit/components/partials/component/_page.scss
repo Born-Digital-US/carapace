@@ -27,8 +27,7 @@
 // Leaderboard
 .pr-leaderboard {
   .regions {
-    border-width: $global-padding * 2;
-    //border-top: 0;
+    border-width: $xxxx-small ($global-padding * 2);
   }
 
   .block {
@@ -55,13 +54,7 @@
   }
 
   &__leaderboard {
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-
-    @media #{$mobile-isolate} {
-      display: block;
-    }
+    display: block;
   }
 
 }
@@ -261,6 +254,29 @@
     display: flex;
     justify-content: space-between;
     align-items: stretch;
+
+    &-first {
+      .block__inner {
+        @include output-rhythm(margin-right, $xx-large);
+        @include output-rhythm(padding-bottom, $x-large);
+      }
+
+      .block {
+        @include output-rhythm(margin-bottom, -$x-large);
+
+        &:last-of-type {
+          @include output-rhythm(margin-bottom, $x-large);
+
+          .block__inner {
+            padding-bottom: 0;
+          }
+        }
+
+        .field {
+          margin-bottom: 0;
+        }
+      }
+    }
   }
 }
 

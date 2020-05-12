@@ -180,7 +180,8 @@ hr {
     &.active,
     &:hover,
     &:focus {
-      color: inherit;
+      color: $page-leaderboard-background-color;
+      background-color: $page-highlighted-background-color;
     }
   }
 
@@ -241,7 +242,13 @@ hr {
 
 // Highlighted
 .pr-highlighted {
-  &__rw {}
+  background-color: $page-highlighted-background-color;
+
+  &__rw {
+    border-color: $page-highlighted-background-color;
+    background-color: $page-highlighted-background-color;
+  }
+
   &__highlighted {}
 }
 
@@ -344,6 +351,9 @@ hr {
 
   &__rw {}
   &__footer {}
+  &__footer-first .block__inner {
+    border-right: 1px solid $page-footer-color;
+  }
 }
 
 
@@ -651,12 +661,12 @@ hr {
         &:hover,
         &:focus {
           color: $resp-menu-hover-color;
-          //background-color: $resp-menu-hover-background-color;
+          background-color: $resp-menu-hover-background-color;
         }
 
         &.is-active {
-          color: $resp-menu-active-color;
-          background-color: $resp-menu-active-background-color;
+          // color: $resp-menu-active-color;
+          // background-color: $resp-menu-active-background-color;
 
           &[href="/"] {
             color: inherit;
@@ -665,7 +675,7 @@ hr {
             &:hover,
             &:focus {
               color: $resp-menu-hover-color;
-              //background-color: $resp-menu-hover-background-color;
+              background-color: $resp-menu-hover-background-color;
             }
           }
         }
@@ -1173,8 +1183,8 @@ button,
   border-color: $button-border-color;
   opacity: 1;
 
-  @if $button-box-shadow == true {
-    box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.25);
+  @if $button-box-shadow != false {
+    box-shadow: $button-box-shadow;
   }
 
   &:hover,
@@ -1505,7 +1515,23 @@ body {
       color: $node-links-color;
       background-color: $node-links-background-color;
 
-      &:hover {
+      &:hover,
+      &:focus {}
+    }
+
+    .node-readmore__link {
+      color: $button-secondary-text-color;
+      background-color: $button-secondary-background-color;
+      border-color: $button-secondary-border-color;
+
+      @if $button-box-shadow != false {
+        box-shadow: $button-box-shadow;
+      }
+
+      &:hover,
+      &:focus {
+        background-color: $button-secondary-background-hover-color;
+        border-color: $button-secondary-background-hover-color;
       }
     }
   }

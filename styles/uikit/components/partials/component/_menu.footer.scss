@@ -16,3 +16,45 @@
   }
 }
 
+.pr-footer{
+  // hide user login link
+  .menu__item-title--log-in {
+    display: none;
+  }
+
+  // menu uses basic link styles
+  .menu {
+    .menu__link {
+      display: inline-block;
+      @include output-rhythm(font-size, $medium);
+
+      &:after {
+        content: none;
+      }
+
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+
+// block--footer-social-media //
+.block-social__content a {
+  display: inline-block;
+  line-height: 0;
+
+  svg {
+    margin: 0.325em;
+    fill: currentColor;
+  }
+
+  &:hover,
+  &:focus {
+    svg {
+      opacity: 0.9;
+    }
+  }
+}

@@ -48,8 +48,6 @@
   color: #ffffff;
   background-color: #0c6170;
   border: 1px #0c6170 solid;
-  -webkit-box-shadow: rgba(255, 255, 255, 0.5) 0 1px 0 inset;
-          box-shadow: rgba(255, 255, 255, 0.5) 0 1px 0 inset;
   margin-bottom: -1px;
   padding: 0.5rem 1rem;
   text-align: left;
@@ -250,8 +248,6 @@
     color: #ffffff;
     background-color: #0c6170;
     border: 1px #0c6170 solid;
-    -webkit-box-shadow: rgba(255, 255, 255, 0.5) 0 1px 0 inset;
-            box-shadow: rgba(255, 255, 255, 0.5) 0 1px 0 inset;
     margin-bottom: -1px;
     padding: 0.5rem 1rem;
     text-align: left;

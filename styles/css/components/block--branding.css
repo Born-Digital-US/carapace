@@ -27,6 +27,11 @@
   padding-right: 1rem;
 }
 
+.site-branding__logo-img {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .site-branding__text {
   display: block;
   margin: 0;

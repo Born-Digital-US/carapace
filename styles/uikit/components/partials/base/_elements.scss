@@ -112,6 +112,10 @@ img {
   height: auto;
   line-height: 0;
   display: inline-block;
+
+  @if $button-box-shadow != false {
+    box-shadow: $button-box-shadow;
+  }
 }
 
 

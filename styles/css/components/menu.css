@@ -87,6 +87,7 @@
 }
 
 .pr-leaderboard .menu {
+  float: right;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -94,6 +95,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  padding-bottom: 0.3125rem;
 }
 
 .pr-leaderboard .menu .menu__item {
@@ -106,8 +108,10 @@
   margin-left: 12px;
 }
 
-.pr-leaderboard .block__content .menu__link:hover, .pr-leaderboard .block__content .menu__link:focus {
-  text-decoration: none;
+.pr-leaderboard .block__content .menu__link {
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 0.3125rem 0.75rem;
 }
 
 .pr-leaderboard .block__content .menu__link:after {
@@ -148,5 +152,36 @@
 
 .pr-footer__footer .block__content .menu__link:after {
   display: none;
+}
+
+.pr-footer .menu__item-title--log-in {
+  display: none;
+}
+
+.pr-footer .menu .menu__link {
+  display: inline-block;
+  font-size: 1rem;
+}
+
+.pr-footer .menu .menu__link:after {
+  content: none;
+}
+
+.pr-footer .menu .menu__link:hover, .pr-footer .menu .menu__link:focus {
+  text-decoration: underline;
+}
+
+.block-social__content a {
+  display: inline-block;
+  line-height: 0;
+}
+
+.block-social__content a svg {
+  margin: 0.325em;
+  fill: currentColor;
+}
+
+.block-social__content a:hover svg, .block-social__content a:focus svg {
+  opacity: 0.9;
 }
 /*# sourceMappingURL=menu.css.map */

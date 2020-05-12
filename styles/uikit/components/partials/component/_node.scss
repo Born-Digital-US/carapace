@@ -46,7 +46,6 @@
 
   &--view-mode-teaser {
     [class*="field-type-text"] {
-      @include adjust-font-size-to($medium * 0.857);
       @include adjust-leading-to(0.9);
     }
 
@@ -98,7 +97,6 @@
 
   // Node submitted, typically "Submitted by... on..."
   &__submitted {
-    @include adjust-font-size-to($medium * 0.857);
 
     // User name
     .field--name-uid {}
@@ -150,8 +148,18 @@
     ul.links.inline a {
       @include output-rhythm(padding, $xxxx-small $xx-small);
       border-radius: $border-radius;
-      @include adjust-font-size-to($medium * 0.857);
-      vertical-align: middle; // counter the vertical bottom needed to render fonts correctly with our fancy hovers.
+
+      &.node-readmore__link {
+        border-radius: $button-border-radius;
+        border-width: $button-border-width;
+        border-style: $button-border-style;
+        @include output-rhythm(padding, $xxx-small $large);
+
+        &:hover,
+        &:focus {
+          text-decoration: none;
+        }
+      }
     }
   }
 
@@ -221,38 +229,3 @@
     padding: 0.3rem 0.625rem;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

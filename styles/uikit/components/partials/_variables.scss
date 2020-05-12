@@ -264,11 +264,11 @@ $page-header-background-color          : #dbf5f0;
 // Navbar.
 $page-navbar-color                     : #0c6170;
 $page-navbar-background-color          : #dbf5f0;
-$page-navbar-hover-background-color    : $page-navbar-background-color;
+$page-navbar-hover-background-color    : $page-navbar-color;
 
 // Highlighted.
 $page-highlighted-color                : $text-color;
-$page-highlighted-background-color     : $regions-background-color;
+$page-highlighted-background-color     : #a4e5e0;
 
 // Features.
 $page-features-color                   : $text-color;
@@ -352,11 +352,11 @@ $menu-arrows                       : true;
 $resp-menu-color                   : $page-navbar-color;
 $resp-menu-background-color        : $page-navbar-background-color;
 
-$resp-menu-hover-color             : $page-navbar-color;
-$resp-menu-active-color            : $page-navbar-color;
+$resp-menu-hover-color             : $page-navbar-background-color;
+$resp-menu-active-color            : $page-navbar-background-color;
 
-$resp-menu-hover-background-color  : $page-navbar-hover-background-color;
-$resp-menu-active-background-color : $page-navbar-hover-background-color;
+$resp-menu-hover-background-color  : $page-navbar-color;
+$resp-menu-active-background-color : $page-navbar-color;
 
 $resp-menu-z-index                 : 480;
 $resp-menu-arrows                  : true;
@@ -364,22 +364,6 @@ $resp-menu-arrows                  : true;
 // Drop Menu
 $dropmenu-item-width               : 12em;
 $dropmenu-arrows                   : true;
-
-
-//$resp-menu-color                   : inherit;
-//$resp-menu-background-color        : inherit;
-//
-//$resp-menu-hover-color             : inherit;
-//$resp-menu-active-color            : inherit;
-//
-//$resp-menu-hover-background-color  : rgba(255, 255, 255, 0.095);
-//$resp-menu-active-background-color : rgba(255, 255, 255, 0.095);
-//
-//$resp-menu-z-index                  : 480;
-//
-//// Drop Menu
-//$dropmenu-item-width               : 12em;
-//$dropmenu-arrows                   : true;
 
 
 // Nodes
@@ -451,7 +435,7 @@ $button-border-width               : $border-width;
 $button-border-style               : $border-style;
 $button-border-radius              : $border-radius-round;
 
-$button-box-shadow                 : true;
+$button-box-shadow                 : 0px 1px 2px 1px rgba(0, 0, 0, 0.25);
 
 // Button Primary
 $button-primary-text-color         : $button-color;
@@ -462,6 +446,7 @@ $button-primary-border-color       : $link-color;
 $button-secondary-text-color       : $link-color;
 $button-secondary-background-color : $text-background-color-light;
 $button-secondary-border-color     : $text-background-color-light;
+$button-secondary-background-hover-color: #a4e5e0;
 
 
 // Tabs

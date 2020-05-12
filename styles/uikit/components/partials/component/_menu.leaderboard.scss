@@ -13,18 +13,21 @@
 
   /* Mixin */
   .menu {
+    float: right;
     @include list-horizontal($flow-from, $margin: (t: 0, r: $small, b: 0, l: 0), $list-item-selector: '.menu__item');
+    @include output-rhythm(padding-bottom, $xxxx-small);
   }
 
   .block__content .menu__link {
+    font-weight: $font-weight-normal;
+    @include output-rhythm(font-size, $medium);
+    @include output-rhythm(padding, $xxxx-small $small);
+
     &:hover,
-    &:focus {
-      text-decoration: none;
-    }
+    &:focus {}
   }
 
   .block__content .menu__link:after {
     display: none;
   }
 }
-

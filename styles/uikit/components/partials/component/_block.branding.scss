@@ -27,7 +27,9 @@
   }
 
   // logo image
-  &__logo-img {}
+  &__logo-img {
+    box-shadow: none;
+  }
 
   // wrapper around site name and slogan (byline)
   &__text {

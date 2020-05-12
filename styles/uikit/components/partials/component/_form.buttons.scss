@@ -26,7 +26,7 @@ button,
   font-weight: $font-weight-normal;
   white-space: nowrap;
   @include output-rhythm(height, $form_input_button_select_height);
-  @include output-rhythm(padding, 0 $x-small);
+  @include output-rhythm(padding, 0 $large);
 
   &:hover,
   &:focus {
@@ -305,5 +305,3 @@ label button.link {
 .tabledrag-toggle-weight {
   @include output-rhythm(font-size, $medium * 0.75);
 }
-
-

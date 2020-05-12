@@ -2,86 +2,6 @@
 /**
  * Hover CSS effects, house in one easy location.
  ============================================================================ */
-.menu a:not(.button):not([class*="toolbar"]) {
-  display: block;
-  vertical-align: middle;
-  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-          box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-transform: translateZ(0);
-          transform: translateZ(0);
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  -webkit-filter: blur(0.1px);
-          filter: blur(0.1px);
-  position: relative;
-  overflow: hidden;
-}
-
-.menu a:not(.button):not([class*="toolbar"]):before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  left: 50%;
-  right: 50%;
-  bottom: 0;
-  height: 2px;
-  -webkit-transition-property: left, right;
-  -o-transition-property: left, right;
-  transition-property: left, right;
-  -webkit-transition-duration: 0.2s;
-       -o-transition-duration: 0.2s;
-          transition-duration: 0.2s;
-  -webkit-transition-timing-function: ease-out;
-       -o-transition-timing-function: ease-out;
-          transition-timing-function: ease-out;
-  overflow: hidden;
-}
-
-.menu a:not(.button):not([class*="toolbar"]):hover:before, .menu a:not(.button):not([class*="toolbar"]):focus:before, .menu a:not(.button):not([class*="toolbar"]):active:before {
-  left: 0;
-  right: 0;
-}
-
-.node :not(.field-type-image) a {
-  display: inline-block;
-  vertical-align: bottom;
-  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-          box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  -webkit-transform: translateZ(0);
-          transform: translateZ(0);
-  -webkit-filter: blur(0.1px);
-          filter: blur(0.1px);
-  position: relative;
-  overflow: hidden;
-}
-
-.node :not(.field-type-image) a:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  left: 50%;
-  right: 50%;
-  bottom: 0;
-  height: 1px;
-  background-color: inherit;
-  -webkit-transition-property: left, right;
-  -o-transition-property: left, right;
-  transition-property: left, right;
-  -webkit-transition-duration: 0.2s;
-       -o-transition-duration: 0.2s;
-          transition-duration: 0.2s;
-  -webkit-transition-timing-function: ease-out;
-       -o-transition-timing-function: ease-out;
-          transition-timing-function: ease-out;
-}
-
-.node :not(.field-type-image) a:hover:before, .node :not(.field-type-image) a:focus:before, .node :not(.field-type-image) a:active:before {
-  left: 0;
-  right: 0;
-}
-
 .node__title a:before {
   display: none;
 }
@@ -242,6 +162,8 @@ img {
   height: auto;
   line-height: 0;
   display: inline-block;
+  -webkit-box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.25);
 }
 
 img,
