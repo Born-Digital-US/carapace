@@ -55,7 +55,6 @@
 }
 
 .pager__link {
-  color: #0e7e92;
   display: inline-block;
   border-radius: 0.125em;
   border: 1px solid;
@@ -67,12 +66,10 @@
 }
 
 .pager__link:focus, .pager__link:hover {
-  color: #0e7e92;
   text-decoration: underline;
 }
 
 .pager__link--is-active {
-  color: #1a2747;
   text-decoration: underline;
 }
 /*# sourceMappingURL=pagers.css.map */

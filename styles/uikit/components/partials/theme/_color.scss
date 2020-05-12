@@ -201,6 +201,12 @@ hr {
   &__header-second {}
 }
 
+.l-header {
+  + .l-navbar .regions {
+    border-bottom-color: $page-navbar-background-color;
+  }
+}
+
 
 // Navbar
 .pr-navbar {
@@ -831,14 +837,17 @@ hr {
 
 // Pager links are either an <a>, or a <span> for the current item in the Views mini-pager.
 .pager__link {
+  color: $link-alt-color;
   border-color: $border-color;
 
   &:focus,
   &:hover {
-    background-color: rgba(255, 255, 255, 0.75);
+    color: $link-alt-hover-color;
+    background-color: $border-color-light;
   }
 
   &:active {
+    color: $link-alt-active-color;
     box-shadow: inset 0 0 3px 0 rgba(0, 0, 0, 0.75);
     opacity: 0.9;
   }
@@ -846,7 +855,8 @@ hr {
 
 // Active item link.
 .pager__link--is-active {
-  background-color: rgba(255, 255, 255, 0.75);
+  color: $link-alt-active-color;
+  background-color: $border-color-light;
 
   .pager--mini & {
     background-color: transparent;

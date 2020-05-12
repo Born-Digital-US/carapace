@@ -85,7 +85,6 @@
 // Pager links are either an <a>, or a <span> for the current item in the
 // Views mini-pager.
 .pager__link {
-  color: $link-alt-color;
   display: inline-block;
   border-radius: $border-radius;
   border: $border-width $border-style;
@@ -95,7 +94,6 @@
 
   &:focus,
   &:hover {
-    color: $link-alt-hover-color;
     text-decoration: underline;
   }
 }
@@ -103,7 +101,6 @@
 
 // Active or "current" link.
 .pager__link--is-active {
-  color: $link-alt-active-color;
   text-decoration: underline;
 }
 
