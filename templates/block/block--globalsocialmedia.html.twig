@@ -10,6 +10,7 @@
  * - Twitter
  * - YouTube
  * - Instagram
+ * - Pinterest
  * - Flickr
  * - LinkedIn
  */
@@ -27,26 +28,26 @@
   <div class="block__inner block-social__inner">
     {%- block content -%}
       <div{{ content_attributes.addClass('block__content', 'block-social__content') }}>
-        {%- if content.field_global_facebook[0] -%}
-          <a href="{{ content.field_global_facebook.0 }}" title="Facebook" target="_blank" class="social-icon__link">{{ source('/themes/contrib/carapace/images/icons/facebook.svg') }}</a>
+        {%- if content.field_global_facebook.0 -%}
+          <a href="{{ content.field_global_facebook.0 }}" aria-label="Facebook" target="_blank" class="social-icon__link">{{ source('/themes/contrib/carapace/images/icons/facebook.svg') }}</a>
         {%- endif -%}
-        {%- if content.field_global_twitter[0] -%}
-          <a href="{{ content.field_global_twitter.0 }}" title="Twitter" target="_blank" class="social-icon__link">{{ source('/themes/contrib/carapace/images/icons/twitter.svg') }}</a>
+        {%- if content.field_global_twitter.0 -%}
+          <a href="{{ content.field_global_twitter.0 }}" aria-label="Twitter" target="_blank" class="social-icon__link">{{ source('/themes/contrib/carapace/images/icons/twitter.svg') }}</a>
         {%- endif -%}
-        {%- if content.field_global_youtube[0] -%}
-          <a href="{{ content.field_global_youtube.0 }}" title="YouTube" target="_blank" class="social-icon__link">{{ source('/themes/contrib/carapace/images/icons/youtube.svg') }}</a>
+        {%- if content.field_global_youtube.0 -%}
+          <a href="{{ content.field_global_youtube.0 }}" aria-label="YouTube" target="_blank" class="social-icon__link">{{ source('/themes/contrib/carapace/images/icons/youtube.svg') }}</a>
         {%- endif -%}
-        {%- if content.field_global_instagram[0] -%}
-          <a href="{{ content.field_global_instagram.0 }}" title="Instagram" target="_blank" class="social-icon__link">{{ source('/themes/contrib/carapace/images/icons/instagram.svg') }}</a>
+        {%- if content.field_global_instagram.0 -%}
+          <a href="{{ content.field_global_instagram.0 }}" aria-label="Instagram" target="_blank" class="social-icon__link">{{ source('/themes/contrib/carapace/images/icons/instagram.svg') }}</a>
         {%- endif -%}
-        {%- if content.field_global_pinterest[0] -%}
-          <a href="{{ content.field_global_pinterest.0 }}" title="Pinterest" target="_blank" class="social-icon__link">{{ source('/themes/contrib/carapace/images/icons/pinterest.svg') }}</a>
+        {%- if content.field_global_pinterest.0 -%}
+          <a href="{{ content.field_global_pinterest.0 }}" aria-label="Pinterest" target="_blank" class="social-icon__link">{{ source('/themes/contrib/carapace/images/icons/pinterest.svg') }}</a>
         {%- endif -%}
-        {%- if content.field_global_flickr[0] -%}
-          <a href="{{ content.field_global_flickr.0 }}" title="Flickr" target="_blank" class="social-icon__link">{{ source('/themes/contrib/carapace/images/icons/flickr.svg') }}</a>
+        {%- if content.field_global_flickr.0 -%}
+          <a href="{{ content.field_global_flickr.0 }}" aria-label="Flickr" target="_blank" class="social-icon__link">{{ source('/themes/contrib/carapace/images/icons/flickr.svg') }}</a>
         {%- endif -%}
-        {%- if content.field_global_linkedin[0] -%}
-          <a href="{{ content.field_global_linkedin.0 }}" title="LinkedIn" target="_blank" class="social-icon__link">{{ source('/themes/contrib/carapace/images/icons/linkedin.svg') }}</a>
+        {%- if content.field_global_linkedin.0 -%}
+          <a href="{{ content.field_global_linkedin.0 }}" aria-label="LinkedIn" target="_blank" class="social-icon__link">{{ source('/themes/contrib/carapace/images/icons/linkedin.svg') }}</a>
         {%- endif -%}
       </div>
     {%- endblock -%}
