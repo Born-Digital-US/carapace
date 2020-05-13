@@ -68,7 +68,25 @@
   // site slogan
   &__slogan {
     font-style: normal;
-    @include output-rhythm(font-size, $medium * 1.25);
+    @include output-rhythm(font-size, $medium);
     @include output-rhythm(padding, $small 0 0);
+
+    @media #{$wide} {
+      @include output-rhythm(font-size, $medium * 1.25);
+    }
+  }
+}
+
+.pr-footer {
+  .site-branding {
+    &__logo-img {
+      max-width: 5rem;
+    }
+    &__name {
+      @include output-rhythm(font-size, $medium * 1.5);
+    }
+    &__slogan {
+      @include output-rhythm(font-size, $medium);
+    }
   }
 }

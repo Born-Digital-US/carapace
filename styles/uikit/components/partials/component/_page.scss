@@ -48,8 +48,6 @@
     @media #{$mobile-isolate} {
       float: none;
       margin: 0 auto;
-      text-align: center;
-      display: table;
     }
   }
 
@@ -248,6 +246,9 @@
 .pr-footer {
   &__rw {
     border: 0;
+    // more spacious footer
+    @include output-rhythm(padding-top, $x-large);
+    @include output-rhythm(padding-bottom, $x-large);
   }
 
   &__footer {
@@ -285,5 +286,11 @@
 .pr-footercols + .pr-footer {
   .block {
     margin-top: 0;
+  }
+}
+
+.pr-disclaimer {
+  &__rw {
+    border: 0;
   }
 }

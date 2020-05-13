@@ -69,6 +69,12 @@ hr {
 }
 
 
+// Headers
+h1, .h1,
+h2, .h2 {
+  color: $page-header-color;
+}
+
 /**
  * Remove text-shadow in selection highlight: h5bp.com/i
  * These selection rule sets have to be separate.

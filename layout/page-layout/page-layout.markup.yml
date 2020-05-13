@@ -41,7 +41,7 @@ rows:
       id: highlighted
     regions:
       highlighted:
-        label: 'Highlighted'
+        label: 'Global search'
         order: 1
   features:
     attributes:

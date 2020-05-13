@@ -45,6 +45,11 @@ hr {
   border-color: #e5e5e5;
 }
 
+h1, .h1,
+h2, .h2 {
+  color: #0c6170;
+}
+
 /**
  * Remove text-shadow in selection highlight: h5bp.com/i
  * These selection rule sets have to be separate.

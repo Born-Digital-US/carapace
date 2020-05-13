@@ -33,8 +33,6 @@
   .pr-leaderboard .block {
     float: none;
     margin: 0 auto;
-    text-align: center;
-    display: table;
   }
 }
 
@@ -145,6 +143,8 @@
 
 .pr-footer__rw {
   border: 0;
+  padding-top: 1.625rem;
+  padding-bottom: 1.625rem;
 }
 
 .pr-footer__footer {
@@ -182,5 +182,9 @@
 
 .pr-footercols + .pr-footer .block {
   margin-top: 0;
+}
+
+.pr-disclaimer__rw {
+  border: 0;
 }
 /*# sourceMappingURL=page.css.map */
