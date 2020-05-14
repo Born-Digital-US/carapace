@@ -621,8 +621,8 @@ h2, .h2 {
       }
 
       .menu__link.is-active {
-        color: $resp-menu-active-color ;
-        background-color: $resp-menu-active-background-color;
+        // color: $resp-menu-active-color ;
+        // background-color: $resp-menu-active-background-color;
 
         &[href="/"] {
           color: $resp-menu-color;
@@ -671,18 +671,12 @@ h2, .h2 {
         }
 
         &.is-active {
-          // color: $resp-menu-active-color;
-          // background-color: $resp-menu-active-background-color;
-
           &[href="/"] {
             color: inherit;
             background-color: transparent; // Match Drupal base path for frontpage/home links
 
             &:hover,
-            &:focus {
-              color: $resp-menu-hover-color;
-              background-color: $resp-menu-hover-background-color;
-            }
+            &:focus {}
           }
         }
       }
@@ -699,10 +693,7 @@ h2, .h2 {
           background-color: $resp-menu-hover-background-color;
         }
 
-        &.is-active {
-          color: $resp-menu-active-color ;
-          background-color: $resp-menu-active-background-color;
-        }
+        &.is-active {}
       }
     }
   }
