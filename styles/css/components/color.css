@@ -444,14 +444,6 @@ h2, .h2 {
   background-color: #0c6170;
 }
 
-.ms-offcanvas .rm-block__content .menu .menu__link.is-active,
-.ms-vertical .rm-block__content .menu .menu__link.is-active,
-.ms-slidedown .rm-block__content .menu .menu__link.is-active,
-.ms-tiles .rm-block__content .menu .menu__link.is-active {
-  color: #dbf5f0;
-  background-color: #0c6170;
-}
-
 .ms-offcanvas .rm-block__content .menu .menu__link.is-active[href="/"],
 .ms-vertical .rm-block__content .menu .menu__link.is-active[href="/"],
 .ms-slidedown .rm-block__content .menu .menu__link.is-active[href="/"],
@@ -503,22 +495,12 @@ h2, .h2 {
   background-color: transparent;
 }
 
-.ms-dropmenu .rm-block__content .menu-level-1 > li > span > .menu__link.is-active[href="/"]:hover, .ms-dropmenu .rm-block__content .menu-level-1 > li > span > .menu__link.is-active[href="/"]:focus {
-  color: #dbf5f0;
-  background-color: #0c6170;
-}
-
 .ms-dropmenu .rm-block__content .menu-level-2 .menu__link {
   color: #0c6170;
   background-color: #dbf5f0;
 }
 
 .ms-dropmenu .rm-block__content .menu-level-2 .menu__link:hover, .ms-dropmenu .rm-block__content .menu-level-2 .menu__link:focus {
-  color: #dbf5f0;
-  background-color: #0c6170;
-}
-
-.ms-dropmenu .rm-block__content .menu-level-2 .menu__link.is-active {
   color: #dbf5f0;
   background-color: #0c6170;
 }
