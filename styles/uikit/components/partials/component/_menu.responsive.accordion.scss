@@ -18,6 +18,10 @@
   .is-parent {
     .menu__link {
       @include output-rhythm(margin-#{$flow-from}, 40px);
+
+      @media #{$wide} {
+        margin: 0;
+      }
     }
   }
 
@@ -68,4 +72,3 @@
     }
   }
 }
-

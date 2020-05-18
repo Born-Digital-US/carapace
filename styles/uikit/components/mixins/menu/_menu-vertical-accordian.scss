@@ -12,13 +12,20 @@
 
       .menu__link {
         @include output-rhythm(margin-bottom, 4px);
-        @include output-rhythm(padding, $xx-small);
+        @include output-rhythm(padding, $xx-small $small);
         position: relative;
         display: block;
 
         &:after {
           content: none;
           display: none;
+        }
+      }
+
+      .menu-level-2 {
+        .menu__link {
+          width: 100%;
+          min-width: 8em;
         }
       }
 
@@ -29,7 +36,7 @@
         transition: $global-transition;
 
         &.is-open--child {
-          position: relative;
+          // position: relative;
           visibility: visible;
           opacity: 1;
         }
@@ -41,4 +48,3 @@
     }
   }
 }
-

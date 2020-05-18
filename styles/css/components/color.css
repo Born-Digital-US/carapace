@@ -169,6 +169,15 @@ h2, .h2 {
   border-color: #dbf5f0;
 }
 
+.pr-header__header-second nav {
+  color: #0c6170;
+  background-color: #dbf5f0;
+}
+
+.pr-header__header-second nav .regions {
+  background-color: #dbf5f0;
+}
+
 .l-header + .l-navbar .regions {
   border-bottom-color: #dbf5f0;
 }
@@ -413,6 +422,13 @@ h2, .h2 {
   background-color: transparent;
 }
 
+.ms-offcanvas .rm-block__content .menu,
+.ms-vertical .rm-block__content .menu,
+.ms-slidedown .rm-block__content .menu,
+.ms-tiles .rm-block__content .menu {
+  background-color: #dbf5f0;
+}
+
 .ms-offcanvas .rm-block__content .menu .menu__link,
 .ms-offcanvas .rm-block__content .menu .rm-accordion-trigger,
 .ms-vertical .rm-block__content .menu .menu__link,
@@ -468,16 +484,7 @@ h2, .h2 {
 .ms-slidedown .rm-block__content .rm-accordion-trigger__icon,
 .ms-tiles .rm-block__content .rm-accordion-trigger__icon {
   background-color: transparent !important;
-  fill: #0c6170;
-}
-
-.ms-slidedown .rm-row,
-.ms-slidedown .rm-region {
-  background-color: #ffffff;
-}
-
-.ms-slidedown .rm-block__content {
-  background-color: #ffffff;
+  fill: currentColor;
 }
 
 .ms-dropmenu .rm-block__content .menu-level-1 > li > span > .menu__link {

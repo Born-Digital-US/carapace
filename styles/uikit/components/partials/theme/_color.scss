@@ -205,7 +205,13 @@ h2, .h2 {
     border-color: $page-header-background-color;
   }
   &__header-first {}
-  &__header-second {}
+  &__header-second {
+    nav {
+      color: $page-navbar-color;
+      background-color: $page-navbar-background-color;
+      @include page-row-background-color($page-navbar-background-color, $page-row-fullwidth);
+    }
+  }
 }
 
 .l-header {
@@ -608,6 +614,8 @@ h2, .h2 {
 .ms-tiles {
   .rm-block__content {
     .menu {
+      background-color: $resp-menu-background-color;
+
       .menu__link,
       .rm-accordion-trigger {
         color: $resp-menu-color;
@@ -639,7 +647,7 @@ h2, .h2 {
 
     .rm-accordion-trigger__icon {
       background-color: transparent !important;
-      fill: $resp-menu-color;
+      fill: currentColor;
     }
   }
 }
@@ -647,13 +655,9 @@ h2, .h2 {
 
 .ms-slidedown {
   .rm-row,
-  .rm-region {
-    background-color: $page-background-color;
-  }
+  .rm-region {}
 
-  .rm-block__content {
-    background-color: $regions-background-color;
-  }
+  .rm-block__content {}
 }
 
 

@@ -83,7 +83,7 @@
   &__link:hover,
   &__link:focus,
   &__link:active {
-    @include output-rhythm(padding, 12px 16px 8px);
+    @include output-rhythm(padding, $global-padding);
     border-radius: $border-radius;
     cursor: pointer;
   }

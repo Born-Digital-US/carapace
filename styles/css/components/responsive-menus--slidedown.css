@@ -7,6 +7,12 @@
 .ms-slidedown .rm-toggle {
   margin-left: 0;
   padding-left: 0;
+  text-align: right;
+}
+
+.ms-slidedown .rm-toggle__link {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
 }
 
 .ms-slidedown .rm-block__content {
@@ -21,7 +27,7 @@
 
 .ms-slidedown .rm-block__content .menu__link {
   margin-bottom: 0.25rem;
-  padding: 0.5rem;
+  padding: 0.5rem 0.625em;
   position: relative;
   display: block;
 }
