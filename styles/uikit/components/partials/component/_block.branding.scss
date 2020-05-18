@@ -35,6 +35,9 @@
   &__text {
     display: block;
     margin: 0;
+    //set for front page use
+    line-height: 1.5rem;
+    font-weight: normal;
   }
 
   // site name
@@ -59,6 +62,8 @@
 
   // site name link
   &__name-link {
+    text-decoration: none;
+
     &:hover,
     &:focus {
       text-decoration: none;

@@ -44,6 +44,11 @@
   display: inline-block;
 }
 
+.pager__item--previous,
+.pager__item--last {
+    margin-left: 4px;
+}
+
 
 @media #{$mobile} {
   .pager__items__first-previous,

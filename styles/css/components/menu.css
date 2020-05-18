@@ -14,8 +14,15 @@
 .menu .menu__link {
   display: block;
   font-weight: 700;
-  font-size: 1.25rem;
   padding: 0.3125rem 0;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+}
+
+@media all and (min-width: 60.063em) {
+  .menu .menu__link {
+    font-size: 1.25rem;
+  }
 }
 
 .menu .menu__link:hover, .menu .menu__link:focus {

@@ -10,9 +10,11 @@
     .rm-toggle {
       margin-#{$flow-from}: 0;
       padding-#{$flow-from}: 0;
+      text-align: right;
 
       &__link {
         //@include output-rhythm(margin-bottom, 4px);
+        @include adjust-font-size-to($medium * 1.125);
       }
     }
 
@@ -21,11 +23,11 @@
       visibility: hidden;
       opacity: 0;
       transition: $global-transition;
-      @include output-rhythm(top, 4px); 
+      @include output-rhythm(top, 4px);
 
       .menu__link {
         @include output-rhythm(margin-bottom, 4px);
-        @include output-rhythm(padding, $xx-small);
+        @include output-rhythm(padding, $xx-small $global-padding);
         position: relative;
         display: block;
 

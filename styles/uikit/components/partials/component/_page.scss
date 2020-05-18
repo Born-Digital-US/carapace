@@ -53,6 +53,14 @@
 
   &__leaderboard {
     display: block;
+
+    .menu.odd {
+      float: none;
+
+      @media #{$wide} {
+        float: right;
+      }
+    }
   }
 
 }
@@ -60,6 +68,8 @@
 
 // Header
 .pr-header {
+  position: relative;
+
   .regions {
     border-width: $global-padding * 2;
     //border-top: 0;
@@ -67,6 +77,21 @@
 
   .block {
     @include output-rhythm(margin, $medium 0);
+  }
+
+  &__header-second {
+    nav.contextual-region {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      z-index: $resp-menu-z-index;
+
+      @media #{$wide} {
+        position: relative;
+        top: auto;
+        @include output-rhythm(padding, $medium 0);
+      }
+    }
   }
 }
 
@@ -276,6 +301,11 @@
         .field {
           margin-bottom: 0;
         }
+      }
+    }
+    &-second {
+      .menu {
+        column-count: 2;
       }
     }
   }

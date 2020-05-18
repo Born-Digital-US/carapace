@@ -13,9 +13,12 @@
   .menu__link {
     display: block;
     font-weight: $font-weight-bold;
-    @include output-rhythm(font-size, $medium * 1.25);
     @include output-rhythm(padding, $xxxx-small 0);
-    //border-bottom: $border-width $border-style;
+    @include adjust-font-size-to($medium * 1.125);
+
+    @media #{$wide} {
+      @include output-rhythm(font-size, $medium * 1.25);
+    }
 
     &:hover,
     &:focus {

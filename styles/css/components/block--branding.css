@@ -35,6 +35,8 @@
 .site-branding__text {
   display: block;
   margin: 0;
+  line-height: 1.5rem;
+  font-weight: normal;
 }
 
 .site-branding__name {
@@ -51,6 +53,10 @@
 
 .site-branding__name__word--at {
   margin-right: -0.2em;
+}
+
+.site-branding__name-link {
+  text-decoration: none;
 }
 
 .site-branding__name-link:hover, .site-branding__name-link:focus {

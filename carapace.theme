@@ -123,6 +123,15 @@ function carapace_page_attachments_alter(array &$page) {
   }
 }
 
+function carapace_preprocess_page(array &$variables) {
+
+  // Load the site name out of configuration.
+  $config = \Drupal::config('system.site');
+  $variables['site_name'] = $config->get('name');
+  $variables['site_slogan'] = $config->get('slogan');
+
+}
+
 /**
  * Preprocess variables for html templates.
  */

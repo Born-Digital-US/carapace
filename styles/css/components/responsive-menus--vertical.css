@@ -10,7 +10,7 @@
 
 .ms-vertical .rm-block__content .menu__link {
   margin-bottom: 0.25rem;
-  padding: 0.5rem;
+  padding: 0.5rem 0.75rem;
   position: relative;
   display: block;
 }
@@ -18,6 +18,11 @@
 .ms-vertical .rm-block__content .menu__link:after {
   content: none;
   display: none;
+}
+
+.ms-vertical .rm-block__content .menu-level-2 .menu__link {
+  width: 100%;
+  min-width: 8em;
 }
 
 .ms-vertical .rm-block__content .is-child {
@@ -30,12 +35,31 @@
 }
 
 .ms-vertical .rm-block__content .is-child.is-open--child {
-  position: relative;
   visibility: visible;
   opacity: 1;
 }
 
 .ms-vertical .rm-block__content .menu__item {
   font-family: inherit;
+}
+
+@media all and (min-width: 60.063em) {
+  .ms-accordion {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .ms-accordion .menu__item .rm-accordion-trigger {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    margin-right: 1rem;
+  }
+  .ms-accordion .menu__item .rm-accordion-trigger__icon {
+    padding: 0.75em 0.625em;
+  }
+  .ms-accordion .menu__item .menu__link {
+    display: inline-block;
+  }
 }
 /*# sourceMappingURL=responsive-menus--vertical.css.map */
