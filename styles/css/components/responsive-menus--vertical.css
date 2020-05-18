@@ -52,7 +52,11 @@
   .ms-accordion .menu__item .rm-accordion-trigger {
     display: inline-block;
     position: relative;
+    vertical-align: top;
     margin-right: 1rem;
+  }
+  .ms-accordion .menu__item .rm-accordion-trigger__icon {
+    padding: 0.75em 0.625em;
   }
   .ms-accordion .menu__item .menu__link {
     display: inline-block;

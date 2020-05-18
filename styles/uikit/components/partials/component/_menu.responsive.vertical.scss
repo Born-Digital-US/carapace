@@ -15,7 +15,12 @@
       .rm-accordion-trigger {
         display: inline-block;
         position: relative;
+        vertical-align: top;
         @include output-rhythm(margin-right, $medium);
+
+        &__icon {
+          @include output-rhythm(padding, ($global-padding * 1.2) $global-padding);
+        }
       }
 
       .menu__link {
