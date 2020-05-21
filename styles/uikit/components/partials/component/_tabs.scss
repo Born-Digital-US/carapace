@@ -49,3 +49,30 @@
 }
 
 
+.horizontal-tabs {
+  box-shadow: $button-box-shadow;
+  @include output-rhythm(padding-bottom, $global-padding);
+  @include output-rhythm(margin-top, $global-padding * 3);
+
+  .horizontal-tabs-list {}
+
+  .horizontal-tab-button a strong {
+    @include output-rhythm(padding-bottom, $xx-small);
+  }
+
+  .horizontal-tabs-panes {
+    details > .details-wrapper {
+      margin: 0;
+    }
+
+    .form-item,
+    .field {
+      // display object details in tab pane as a grid
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-column-gap: 1em;
+      @include output-rhythm(padding, $global-padding 0);
+      @include output-rhythm(margin-bottom, $small);
+    }
+  }
+}

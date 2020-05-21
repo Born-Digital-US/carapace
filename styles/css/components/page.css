@@ -125,6 +125,10 @@
   border-bottom: 0.625em solid;
 }
 
+.pr-highlighted__rw {
+  border-top: none;
+}
+
 .pr-features + .pr-main .block,
 .pr-features + .pr-content-prefix .block {
   margin-top: 0;

@@ -161,7 +161,9 @@
 
 // Highlighted
 .pr-highlighted {
-  &__rw {}
+  &__rw {
+    border-top: none;
+  }
   &__highlighted {}
 }
 

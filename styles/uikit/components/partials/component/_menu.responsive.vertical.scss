@@ -17,6 +17,7 @@
         position: relative;
         vertical-align: top;
         @include output-rhythm(margin-right, $medium);
+        @include output-rhythm(margin-left, -4px);
 
         &__icon {
           @include output-rhythm(padding, ($global-padding * 1.2) $global-padding);

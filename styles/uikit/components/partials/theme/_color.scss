@@ -1130,6 +1130,49 @@ form .marker {
 
 
 /**
+ * Horizontal tabs.
+ ============================================================================ */
+.horizontal-tabs {
+  border-color: $border-color;
+
+  .horizontal-tabs-list {
+    background: transparent;
+    border-color: transparent;
+  }
+
+  .horizontal-tab-button {
+    border-color: transparent;
+    background: transparent;
+
+    a {
+      color: $text-color;
+
+      &:hover,
+      &:focus {
+        color: $link-color;
+
+        strong {
+          border-bottom: 3px solid $link-color;
+        }
+      }
+    }
+
+    &.selected a strong {
+      color: $link-color;
+      border-bottom: 3px solid $link-color;
+    }
+  }
+
+  .horizontal-tabs-panes {
+    .form-item,
+    .field {
+      border-bottom: 1px solid $border-color;
+    }
+  }
+}
+
+
+/**
  * Vertical tabs.
  ============================================================================ */
 

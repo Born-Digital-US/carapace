@@ -21,4 +21,19 @@
   }
 }
 
+// Override A2A to use theme colors, round icons
+.addtoany_list.a2a_kit {
+  display: inline-block;
+  @include output-rhythm(margin-bottom, $x-large);
 
+  a > .a2a_svg {
+    background-color: currentColor !important;
+    border-radius: 50%;
+    margin: 0.125em;
+  }
+
+  // LinkedIn requires a square icon space
+  .a2a_button_linkedin > .a2a_svg {
+    border-radius: 4px;
+  }
+}

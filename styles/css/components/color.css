@@ -891,6 +891,45 @@ form .marker {
 }
 
 /**
+ * Horizontal tabs.
+ ============================================================================ */
+.horizontal-tabs {
+  border-color: #e5e5e5;
+}
+
+.horizontal-tabs .horizontal-tabs-list {
+  background: transparent;
+  border-color: transparent;
+}
+
+.horizontal-tabs .horizontal-tab-button {
+  border-color: transparent;
+  background: transparent;
+}
+
+.horizontal-tabs .horizontal-tab-button a {
+  color: #1a2747;
+}
+
+.horizontal-tabs .horizontal-tab-button a:hover, .horizontal-tabs .horizontal-tab-button a:focus {
+  color: #0c6170;
+}
+
+.horizontal-tabs .horizontal-tab-button a:hover strong, .horizontal-tabs .horizontal-tab-button a:focus strong {
+  border-bottom: 3px solid #0c6170;
+}
+
+.horizontal-tabs .horizontal-tab-button.selected a strong {
+  color: #0c6170;
+  border-bottom: 3px solid #0c6170;
+}
+
+.horizontal-tabs .horizontal-tabs-panes .form-item,
+.horizontal-tabs .horizontal-tabs-panes .field {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/**
  * Vertical tabs.
  ============================================================================ */
 .vertical-tabs {
@@ -938,8 +977,8 @@ button,
   background-color: #0c6170;
   border-color: #0c6170;
   opacity: 1;
-  -webkit-box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
 }
 
 button:hover, button:focus,
@@ -1242,8 +1281,8 @@ body:before {
   color: #0c6170;
   background-color: #dbf5f0;
   border-color: #dbf5f0;
-  -webkit-box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
 }
 
 .node .field-node--node-link .node-readmore__link:hover, .node .field-node--node-link .node-readmore__link:focus, .node__links .node-readmore__link:hover, .node__links .node-readmore__link:focus {

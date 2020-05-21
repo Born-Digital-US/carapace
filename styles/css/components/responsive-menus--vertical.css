@@ -54,6 +54,7 @@
     position: relative;
     vertical-align: top;
     margin-right: 1rem;
+    margin-left: -0.25rem;
   }
   .ms-accordion .menu__item .rm-accordion-trigger__icon {
     padding: 0.75em 0.625em;

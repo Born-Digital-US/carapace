@@ -27,6 +27,11 @@
   float: right;
 }
 
+.node__title,
+.node .field-node--node-title {
+  margin-bottom: 0.625em;
+}
+
 .node--view-mode-full__title {
   margin: 0 0 1rem;
 }
@@ -36,8 +41,7 @@
 }
 
 .node__meta {
-  margin: 1rem 0;
-  overflow: hidden;
+  display: none;
 }
 
 .node__meta .field-type-image {
