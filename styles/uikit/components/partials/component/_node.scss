@@ -30,7 +30,9 @@
   // Header - includes title (h1 full, h2 teaser), user picture, author and date.
   &__header {}
   &__title,
-  .field-node--node-title {}
+  .field-node--node-title {
+    @include output-rhythm(margin-bottom, $global-padding);
+  }
 
 
   // View modes
@@ -61,8 +63,9 @@
 
   // Node author picture, name and date details.
   &__meta {
-    @include output-rhythm(margin, $medium 0);
-    @include cf;
+    // @include output-rhythm(margin, $medium 0);
+    // @include cf;
+    display: none;
 
     // Author picture is showing.
     &--has-author-picture {
