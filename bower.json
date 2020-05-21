@@ -1,0 +1,23 @@
+{
+  "name": "carapace",
+  "description": "Theme starterkit for Adaptivetheme and Drupal 8",
+  "main": "",
+  "authors": [
+    "Jeff Burnz"
+  ],
+  "license": "GPL-2.0",
+  "keywords": [
+    "drupal",
+    "theme",
+    "adaptivetheme"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
