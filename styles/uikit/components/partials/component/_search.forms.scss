@@ -5,6 +5,7 @@
  ============================================================================ */
 
 // Search Block form.
+.block.block-plugin-id--views-exposed-filter-block-solr-search-content-page-1,
 .search-block-form__form {
   @include output-rhythm(margin, ($global-padding *5) auto);
 

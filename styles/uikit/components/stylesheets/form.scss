@@ -10,3 +10,9 @@
   "../partials/component/form.vertical-tabs",
   "../partials/component/exposed-filters",
   "../partials/component/field.widgets";
+
+// include search here
+@import
+  "../partials/component/block.search",
+  "../partials/component/search.results",
+  "../partials/component/search.forms";
