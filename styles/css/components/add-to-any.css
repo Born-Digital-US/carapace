@@ -14,4 +14,19 @@
 .addtoany_list .addtoany_share_save {
   padding: 0 0.25rem;
 }
+
+.addtoany_list.a2a_kit {
+  display: inline-block;
+  margin-bottom: 1.625rem;
+}
+
+.addtoany_list.a2a_kit a > .a2a_svg {
+  background-color: currentColor !important;
+  border-radius: 50%;
+  margin: 0.125em;
+}
+
+.addtoany_list.a2a_kit .a2a_button_linkedin > .a2a_svg {
+  border-radius: 4px;
+}
 /*# sourceMappingURL=add-to-any.css.map */

@@ -6,7 +6,8 @@
 // the CKEditor (wysiwyg). When captions are used images are wrapped in
 // a figure element.
 img,
-.field-type-image__figure {
+.field-type-image__figure,
+.caption-img {
 
   @media #{$wide} {
     &.align-left {
@@ -37,4 +38,3 @@ img,
     clear: both;
   }
 }
-
