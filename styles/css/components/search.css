@@ -88,16 +88,19 @@
  * - search block form
  * - advanced search form
  ============================================================================ */
+.block.block-plugin-id--views-exposed-filter-block-solr-search-content-page-1,
 .search-block-form__form {
   margin: 3.125em auto;
 }
 
 @media all and (min-width: 60.063em) {
+  .block.block-plugin-id--views-exposed-filter-block-solr-search-content-page-1,
   .search-block-form__form {
     max-width: 50%;
   }
 }
 
+.block.block-plugin-id--views-exposed-filter-block-solr-search-content-page-1 label,
 .search-block-form__form label {
   position: absolute !important;
   clip: rect(1px, 1px, 1px, 1px);
@@ -109,6 +112,7 @@
   font: 0/0 a;
 }
 
+.block.block-plugin-id--views-exposed-filter-block-solr-search-content-page-1 .form--inline,
 .search-block-form__form .form--inline {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -117,51 +121,62 @@
           box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
 }
 
+.block.block-plugin-id--views-exposed-filter-block-solr-search-content-page-1 .form--inline .form-item,
 .search-block-form__form .form--inline .form-item {
   float: none;
   margin: 0;
   width: 100%;
 }
 
+.block.block-plugin-id--views-exposed-filter-block-solr-search-content-page-1 .form-type-search,
+.block.block-plugin-id--views-exposed-filter-block-solr-search-content-page-1 .form-actions,
 .search-block-form__form .form-type-search,
 .search-block-form__form .form-actions {
   display: inline;
   margin: 0;
 }
 
+.block.block-plugin-id--views-exposed-filter-block-solr-search-content-page-1 .form-search,
 .search-block-form__form .form-search {
   width: 100%;
 }
 
-.submit-is-visible .search-block-form__form .form-search {
+.submit-is-visible .block.block-plugin-id--views-exposed-filter-block-solr-search-content-page-1 .form-search, .submit-is-visible
+.search-block-form__form .form-search {
   padding-right: 2.1875rem;
 }
 
+.block.block-plugin-id--views-exposed-filter-block-solr-search-content-page-1 .form-actions .form-submit,
 .search-block-form__form .form-actions .form-submit {
   border-radius: 0;
   margin-right: 0;
 }
 
+.block.block-plugin-id--views-exposed-filter-block-solr-search-content-page-1 .contextual-render-processed,
 .search-block-form__form .contextual-render-processed {
   top: 2px;
   right: 2em;
 }
 
+.block.block-plugin-id--views-exposed-filter-block-solr-search-content-page-1 ::-webkit-input-placeholder,
 .search-block-form__form ::-webkit-input-placeholder {
   color: #e5e5e5;
   opacity: 0.75;
 }
 
+.block.block-plugin-id--views-exposed-filter-block-solr-search-content-page-1 :-moz-placeholder,
 .search-block-form__form :-moz-placeholder {
   color: #e5e5e5;
   opacity: 0.75;
 }
 
+.block.block-plugin-id--views-exposed-filter-block-solr-search-content-page-1 ::-moz-placeholder,
 .search-block-form__form ::-moz-placeholder {
   color: #e5e5e5;
   opacity: 0.75;
 }
 
+.block.block-plugin-id--views-exposed-filter-block-solr-search-content-page-1 :-ms-input-placeholder,
 .search-block-form__form :-ms-input-placeholder {
   color: #e5e5e5;
   opacity: 0.75;

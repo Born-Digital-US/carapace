@@ -11,7 +11,8 @@
   "../partials/component/exposed-filters",
   "../partials/component/field.widgets";
 
-  @import
-    "../partials/component/block.search",
-    "../partials/component/search.results",
-    "../partials/component/search.forms";
+// include search here
+@import
+  "../partials/component/block.search",
+  "../partials/component/search.results",
+  "../partials/component/search.forms";
