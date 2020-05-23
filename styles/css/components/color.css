@@ -271,9 +271,11 @@ h2, .h2 {
   color: inherit;
 }
 
-.pr-footercols__footer-first .block__inner,
-.pr-footer__footer-first .block__inner {
-  border-right: 1px solid #0c6170;
+@media all and (min-width: 60.063em) {
+  .pr-footercols__footer-first .block__inner,
+  .pr-footer__footer-first .block__inner {
+    border-right: 1px solid #0c6170;
+  }
 }
 
 .pr-disclaimer {
@@ -888,6 +890,22 @@ form .marker {
 .form-item textarea.error,
 .form-item select.error {
   border-color: #f9c9bf;
+}
+
+/**
+ * Tabs.
+ ============================================================================ */
+.horizontal-tabs-active-tab + details {
+  border-color: #e5e5e5;
+}
+
+.horizontal-tabs-active-tab + details summary[aria-expanded="true"] {
+  color: #0c6170;
+}
+
+.horizontal-tabs-active-tab + details .form-item,
+.horizontal-tabs-active-tab + details .field {
+  border-bottom: 1px solid #e5e5e5;
 }
 
 /**
