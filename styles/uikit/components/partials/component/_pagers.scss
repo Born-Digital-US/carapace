@@ -6,7 +6,7 @@
 
 // <nav> element wrapper.
 .pager {
-  @include output-rhythm(margin, $medium 0);
+  // @include output-rhythm(margin, $medium 0);
   text-align: center;
 
   // Local reset.
@@ -89,6 +89,7 @@
 
 // Pager links are either an <a>, or a <span> for the current item in the
 // Views mini-pager.
+.pagination_option_item__link,
 .pager__link {
   display: inline-block;
   border-radius: $border-radius;
@@ -105,6 +106,7 @@
 
 
 // Active or "current" link.
+.pagination_option_item__link--is-active,
 .pager__link--is-active {
   text-decoration: underline;
 }

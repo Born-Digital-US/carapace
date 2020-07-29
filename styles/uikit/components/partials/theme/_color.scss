@@ -847,6 +847,7 @@ h2, .h2 {
  ============================================================================ */
 
 // Pager links are either an <a>, or a <span> for the current item in the Views mini-pager.
+.pagination_option_item__link,
 .pager__link {
   color: $link-alt-color;
   border-color: $border-color;
@@ -865,6 +866,7 @@ h2, .h2 {
 }
 
 // Active item link.
+.pagination_option_item__link--is-active,
 .pager__link--is-active {
   color: $link-alt-active-color;
   background-color: $border-color-light;
@@ -1657,7 +1659,13 @@ body {
   box-shadow: $node-teaser-box-shadow;
 }
 
+.search-results__header {
+  border-color: $border-color;
+}
 
+.facet-item__count {
+  background-color: $text-background-color-semi-transparent;
+}
 
 /**
  * Comments
