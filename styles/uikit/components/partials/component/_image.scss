@@ -8,6 +8,9 @@
 img,
 .field-type-image__figure,
 .caption-img {
+  > figcaption {
+    display: block;
+  }
 
   @media #{$wide} {
     &.align-left {
@@ -16,6 +19,10 @@ img,
 
     &.align-right {
       @include output-rhythm(margin, 0 0 $medium $medium);
+    }
+
+    > figcaption {
+      display: table-caption;
     }
   }
 
@@ -36,5 +43,10 @@ img,
 
   &[class*="align-"] {
     clear: both;
+    display: block;
+
+    @media #{$wide} {
+      display: inline-block;
+    }
   }
 }

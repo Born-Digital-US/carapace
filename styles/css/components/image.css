@@ -1,6 +1,12 @@
 /**
  * Images
  ============================================================================ */
+img > figcaption,
+.field-type-image__figure > figcaption,
+.caption-img > figcaption {
+  display: block;
+}
+
 @media all and (min-width: 60.063em) {
   img.align-left,
   .field-type-image__figure.align-left,
@@ -11,6 +17,11 @@
   .field-type-image__figure.align-right,
   .caption-img.align-right {
     margin: 0 0 1rem 1rem;
+  }
+  img > figcaption,
+  .field-type-image__figure > figcaption,
+  .caption-img > figcaption {
+    display: table-caption;
   }
 }
 
@@ -38,6 +49,15 @@ img[class*="align-"],
 .field-type-image__figure[class*="align-"],
 .caption-img[class*="align-"] {
   clear: both;
+  display: block;
+}
+
+@media all and (min-width: 60.063em) {
+  img[class*="align-"],
+  .field-type-image__figure[class*="align-"],
+  .caption-img[class*="align-"] {
+    display: inline-block;
+  }
 }
 
 /**

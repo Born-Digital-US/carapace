@@ -364,7 +364,9 @@ h2, .h2 {
   &__rw {}
   &__footer {}
   &__footer-first .block__inner {
-    border-right: 1px solid $page-footer-color;
+    @media #{$wide} {
+      border-right: 1px solid $page-footer-color;
+    }
   }
 }
 
@@ -1130,6 +1132,22 @@ form .marker {
   }
 }
 
+
+/**
+ * Tabs.
+ ============================================================================ */
+.horizontal-tabs-active-tab + details {
+  border-color: $border-color;
+
+  summary[aria-expanded="true"] {
+    color: $link-color;
+  }
+
+  .form-item,
+  .field {
+    border-bottom: 1px solid $border-color;
+  }
+}
 
 /**
  * Horizontal tabs.
