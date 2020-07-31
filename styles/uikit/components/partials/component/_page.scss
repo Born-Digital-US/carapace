@@ -233,6 +233,11 @@
     }
   }
 
+  // override Carapace layout css for pages without sidebar content
+  .arc--2.hr--1-3 .l-r.pr-main__sidebar-second {
+    width: 100%;
+}
+
   @media #{$tablet} {
     &__sidebar-first + &__sidebar-second {
       padding-left: 8%;
