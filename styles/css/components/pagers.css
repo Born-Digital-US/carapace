@@ -4,7 +4,6 @@
  * - Views mini pager.
  ============================================================================ */
 .pager {
-  margin: 1rem 0;
   text-align: center;
 }
 
@@ -59,6 +58,7 @@
   }
 }
 
+.pagination_option_item__link,
 .pager__link {
   display: inline-block;
   border-radius: 0.125em;
@@ -70,10 +70,13 @@
   padding: 0.125rem 0.4375rem 0;
 }
 
-.pager__link:focus, .pager__link:hover {
+.pagination_option_item__link:focus, .pagination_option_item__link:hover,
+.pager__link:focus,
+.pager__link:hover {
   text-decoration: underline;
 }
 
+.pagination_option_item__link--is-active,
 .pager__link--is-active {
   text-decoration: underline;
 }
