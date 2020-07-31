@@ -166,6 +166,12 @@
   padding: 0;
 }
 
+@media all and (min-width: 45.063em) {
+  .pr-main__sidebar-first + .pr-main__sidebar-second {
+    padding-left: 8%;
+  }
+}
+
 .pr-subfeatures__rw {
   border: 0;
 }

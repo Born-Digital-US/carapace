@@ -14,6 +14,13 @@
   @include adjust-font-size-to($large);
 }
 
+.block-facet--links {
+  .block__title {
+    border-bottom: $border-width $border-style;
+    font-weight: $font-weight-bold;
+  }
+}
+
 // The block has a title.
 .block.has-title {}
 
@@ -23,10 +30,3 @@
     margin: 0;
   }
 }
-
-
-
-
-
-
-

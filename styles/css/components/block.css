@@ -11,6 +11,11 @@
   line-height: 1.5rem;
 }
 
+.block-facet--links .block__title {
+  border-bottom: 1px solid;
+  font-weight: 700;
+}
+
 .block__content p:last-of-type {
   margin: 0;
 }

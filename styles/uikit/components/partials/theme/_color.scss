@@ -299,6 +299,18 @@ h2, .h2 {
       .block__content {
         background-color: $sidebar-block-body-background-color;
       }
+
+      &.block-facet--links {
+        .block__title {
+          color: $text-color;
+          background-color: $body-background-color;
+          border-bottom-color: $border-color;
+        }
+
+        .block__content {
+          background-color: $body-background-color;
+        }
+      }
     }
 
     .block-search .block__content {

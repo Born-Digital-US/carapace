@@ -236,6 +236,16 @@ h2, .h2 {
   background-color: #dbf5f0;
 }
 
+.pr-main__sidebar-first .block.has-title.block-facet--links .block__title, .pr-main__sidebar-second .block.has-title.block-facet--links .block__title {
+  color: #1a2747;
+  background-color: #ffffff;
+  border-bottom-color: #e5e5e5;
+}
+
+.pr-main__sidebar-first .block.has-title.block-facet--links .block__content, .pr-main__sidebar-second .block.has-title.block-facet--links .block__content {
+  background-color: #ffffff;
+}
+
 .pr-main__sidebar-first .block-search .block__content, .pr-main__sidebar-second .block-search .block__content {
   background-color: transparent;
 }

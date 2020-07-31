@@ -232,6 +232,12 @@
      padding: 0;
     }
   }
+
+  @media #{$tablet} {
+    &__sidebar-first + &__sidebar-second {
+      padding-left: 8%;
+    }
+  }
 }
 
 
