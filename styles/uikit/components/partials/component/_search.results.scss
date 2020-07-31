@@ -38,9 +38,9 @@
       align-items: center;
 
       > * {
-        @include output-rhythm(margin-right, $medium);
+        @include output-rhythm(margin-right, $large);
 
-        &:last-of-type {
+        &:last-child {
           margin-right: 0;
         }
       }
@@ -58,8 +58,8 @@
       }
     }
 
-    .display_selector__container > * {
-      @include output-rhythm(padding, 0 $small);
+    .display_selector__container > *:first-child {
+      @include output-rhythm(padding-right, $large);
     }
   }
 }

@@ -1174,10 +1174,10 @@ div[class*="field--widget-entity-reference"] div.clearfix:last-child .placeholde
 }
 
 .search-results__header > div > * {
-  margin-right: 1rem;
+  margin-right: 1.25rem;
 }
 
-.search-results__header > div > *:last-of-type {
+.search-results__header > div > *:last-child {
   margin-right: 0;
 }
 
@@ -1195,8 +1195,8 @@ div[class*="field--widget-entity-reference"] div.clearfix:last-child .placeholde
   padding: 0 0.125rem;
 }
 
-.search-results__header .display_selector__container > * {
-  padding: 0 0.75rem;
+.search-results__header .display_selector__container > *:first-child {
+  padding-right: 1.25rem;
 }
 
 .facets-widget-links ul {
