@@ -156,6 +156,37 @@
   margin: 0;
 }
 
+.path-frontpage .field-type-image__item a {
+  display: block;
+  width: 100%;
+}
+
+.path-frontpage .field-type-image__item img {
+  width: 100%;
+}
+
+@media all and (min-width: 45.063em) {
+  .path-frontpage .node__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .path-frontpage .node__content > :first-child:not(:empty) {
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    padding-right: 8%;
+  }
+  .path-frontpage .node__content .field-type-image__item a {
+    width: 18rem;
+  }
+}
+
+@media all and (min-width: 60.063em) {
+  .path-frontpage .node__content .field-type-image__item a {
+    width: 23rem;
+  }
+}
+
 /**
  * Search forms
  * - search block form

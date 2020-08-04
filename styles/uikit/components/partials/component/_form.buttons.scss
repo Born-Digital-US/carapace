@@ -25,6 +25,7 @@ button,
   text-align: $button-text-align;
   font-weight: $font-weight-normal;
   white-space: nowrap;
+  text-transform: $button-text-transform;
   @include output-rhythm(height, $form_input_button_select_height);
   @include output-rhythm(padding, 0 $large);
 

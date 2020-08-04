@@ -36,11 +36,7 @@
           <a href="{{ path('<front>') }}" title="{{ 'Home'|t }}" itemprop="url" rel="home" class="site-branding__logo-link"><img src="{{ site_logo }}" alt="{{ 'Home'|t }}" itemprop="logo" class="site-branding__logo-img" /></a>
         {%- endif -%}
         {%- if site_name or site_slogan -%}
-          {% if is_front %}
-            <h1 class="site-branding__text">
-          {%- else -%}
             <span class="site-branding__text">
-          {%- endif -%}
 
             {%- if site_name -%}
               <strong class="site-branding__name">
@@ -61,13 +57,7 @@
             {%- if site_slogan -%}
               <em class="site-branding__slogan">{{ site_slogan }}</em>
             {%- endif -%}
-          {% if is_front %}
-            </h1>
-          {%- else -%}
             </span>
-          {%- endif -%}
-        {%- elseif is_front -%}
-          <h1 class="visually-hidden">Digital Collection</h1>
         {%- endif -%}
       </div>
     {%- endblock -%}

@@ -112,3 +112,47 @@
     margin: 0;
   }
 }
+
+// Homepage Teaser
+.path-frontpage {
+  .field-type-image__item {
+    a {
+      display: block;
+      width: 100%;
+    }
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media #{$tablet} {
+  .path-frontpage {
+    .node__content {
+      display: flex;
+
+      & >:first-child:not(:empty) {
+        flex-shrink: 0;
+        padding-right: $global-padding-percent;
+      }
+
+      .field-type-image__item {
+        a {
+          width: 18rem;
+        }
+      }
+    }
+  }
+}
+
+@media #{$wide} {
+  .path-frontpage {
+    .node__content {
+      .field-type-image__item {
+        a {
+          width: 23rem;
+        }
+      }
+    }
+  }
+}

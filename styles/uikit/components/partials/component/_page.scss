@@ -209,9 +209,6 @@
 .pr-main {
   &__rw {}
   &__content {}
-  &__sidebar-first {}
-  &__sidebar-second {}
-
   &__sidebar-first,
   &__sidebar-second {
     .block__title {
@@ -222,16 +219,14 @@
     .block__content {
       border-radius: 0 0 $border-radius $border-radius;
     }
-
-    .block__title,
-    .block__content {
-      @include output-rhythm(padding, $small);
-    }
-
-    .block-search .block__content {
-     padding: 0;
+  }
+  &__sidebar-first {
+    .block__title {
+      @include output-rhythm(padding-bottom, $small);
+      @include output-rhythm(margin-bottom, $small);
     }
   }
+  &__sidebar-second {}
 
   // override Carapace layout css for pages without sidebar content
   .arc--2.hr--1-3 .l-r.pr-main__sidebar-second {
@@ -240,7 +235,7 @@
 
   @media #{$tablet} {
     &__sidebar-first + &__sidebar-second {
-      padding-left: 8%;
+      padding-left: $global-padding-percent;
     }
   }
 }

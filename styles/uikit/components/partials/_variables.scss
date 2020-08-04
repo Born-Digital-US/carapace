@@ -110,6 +110,7 @@ $font-monospace   : $monospace;
 // to ensure things like gutters are teh same everywhere, or use it recalculate
 // gutters, e.g. if we want to double it.
 $global-padding: 0.625em;
+$global-padding-percent: 8%;
 
 
 
@@ -427,6 +428,8 @@ $button-text-align                 : center;
 
 $button-color                      : $text-background-color-normal ;
 $button-hover-color                : $button-color;
+
+$button-text-transform             : uppercase;
 
 $button-background-color           : $text-color-medium;
 $button-background-hover-color     : $button-background-color;

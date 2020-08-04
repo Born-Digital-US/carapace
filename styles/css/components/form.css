@@ -591,6 +591,7 @@ button,
   text-align: center;
   font-weight: 400;
   white-space: nowrap;
+  text-transform: uppercase;
   height: 2rem;
   padding: 0 1.25rem;
 }
@@ -1228,6 +1229,37 @@ div[class*="field--widget-entity-reference"] div.clearfix:last-child .placeholde
 
 .search-result p {
   margin: 0;
+}
+
+.path-frontpage .field-type-image__item a {
+  display: block;
+  width: 100%;
+}
+
+.path-frontpage .field-type-image__item img {
+  width: 100%;
+}
+
+@media all and (min-width: 45.063em) {
+  .path-frontpage .node__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .path-frontpage .node__content > :first-child:not(:empty) {
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    padding-right: 8%;
+  }
+  .path-frontpage .node__content .field-type-image__item a {
+    width: 18rem;
+  }
+}
+
+@media all and (min-width: 60.063em) {
+  .path-frontpage .node__content .field-type-image__item a {
+    width: 23rem;
+  }
 }
 
 /**

@@ -154,6 +154,7 @@
         border-radius: $button-border-radius;
         border-width: $button-border-width;
         border-style: $button-border-style;
+        text-transform: $button-text-transform;
         @include output-rhythm(padding, $xxx-small $large);
 
         &:hover,
@@ -204,7 +205,7 @@
 /* View Modes to support nodes in views and other lists. */
 
 .node--view-mode-teaser {
-  border-bottom: $border-width $border-style;
+  // border-bottom: $border-width $border-style;
 
   @include output-rhythm(margin-bottom, $large);
   @include output-rhythm(padding-bottom, $small);
