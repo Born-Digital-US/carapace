@@ -1231,13 +1231,29 @@ div[class*="field--widget-entity-reference"] div.clearfix:last-child .placeholde
   margin: 0;
 }
 
-.path-frontpage .field-type-image__item a {
+.node__content .field-type-image__item a {
   display: block;
   width: 100%;
 }
 
-.path-frontpage .field-type-image__item img {
+.node__content .field-type-image__item img {
   width: 100%;
+}
+
+@media all and (min-width: 60.063em) {
+  .node__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .node__content > :first-child:not(:empty) {
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    padding-right: 4%;
+  }
+  .node__content .field-type-image__item a {
+    width: 13rem;
+  }
 }
 
 @media all and (min-width: 45.063em) {

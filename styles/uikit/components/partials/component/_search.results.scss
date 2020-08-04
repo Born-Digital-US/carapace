@@ -113,8 +113,9 @@
   }
 }
 
-// Homepage Teaser
-.path-frontpage {
+// Search Results Teaser
+
+.node__content {
   .field-type-image__item {
     a {
       display: block;
@@ -126,6 +127,24 @@
   }
 }
 
+@media #{$wide} {
+  .node__content {
+    display: flex;
+
+    & >:first-child:not(:empty) {
+      flex-shrink: 0;
+      padding-right: $global-padding-percent / 2;
+    }
+
+    .field-type-image__item {
+      a {
+        width: 13rem;
+      }
+    }
+  }
+}
+
+// Homepage Teaser
 @media #{$tablet} {
   .path-frontpage {
     .node__content {
