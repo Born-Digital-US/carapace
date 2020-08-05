@@ -30,27 +30,15 @@
   display: inline-block;
 }
 
-@media all and (max-width: 60em) {
-  .pager__items__first-previous,
-  .pager__items__num-pages,
-  .pager__items__next-last {
-    text-align: center;
-  }
-  .pager__items__first-previous .pager__item,
-  .pager__items__next-last .pager__item {
-    display: inline;
-  }
+.pager__items__first-previous,
+.pager__items__num-pages,
+.pager__items__next-last {
+  text-align: center;
 }
 
-@media all and (min-width: 60.063em) {
-  .pager__items__first-previous,
-  .pager__items__num-pages,
-  .pager__items__next-last {
-    display: inline-block;
-  }
-  .pager__items__num-pages {
-    text-align: center;
-  }
+.pager__items__first-previous .pager__item,
+.pager__items__next-last .pager__item {
+  display: inline;
 }
 
 .pagination_option_item__link,

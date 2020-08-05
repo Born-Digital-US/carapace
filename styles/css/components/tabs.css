@@ -231,7 +231,7 @@
   color: #1a2747;
 }
 
-@media all and (max-width: 60em) {
+@media all and (min-width: 60em) {
   .no-js .tabs ul.tabs--primary {
     border-bottom: 0;
   }

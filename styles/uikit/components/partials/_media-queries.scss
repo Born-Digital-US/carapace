@@ -42,25 +42,6 @@ $wide-isolate   : "all and (min-width: 60.063em) and (max-width: 120em)";
 $tablet         : "all and (min-width: 45.063em)";
 $wide           : "all and (min-width: 60.063em)";
 $huge           : "all and (min-width: 120.063em)";
+$mobile         : "all and (min-width: 60em)";
 
-
-// Breakpoints - Responsive Menus
-//
-// Responsive breakpoints differ in that they are all max-width. In other words
-// they are effectively a "desktop first" strategy. The concept is that we set
-// the responsive menu to activate up to a certain width, after that the default
-// menu is activated.
-//
-// The "max-width" breakpoint is a special case in that it exactly matches the
-// CSS "max-width" of the default layout settings. AT sub-themes are set to use
-// this breakpoint by default for responsive menus (see Responsive Menu
-// extension in Appearance settings).
-//
-//   mobile    - 0 to 60em (0 to 960px)
-//   max-width - 0 to 75em (0 to 1200px)
-//
-// | mobile ------------->|
-// | maxwidth ------------------------------->|
-//
-$mobile    : "all and (max-width: 60em)";
 $max-width : "all and (max-width: 75em)";

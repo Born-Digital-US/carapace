@@ -47,7 +47,7 @@
   margin-bottom: 0;
 }
 
-@media all and (max-width: 60em) {
+@media all and (min-width: 60em) {
   th.priority-low,
   td.priority-low,
   th.priority-medium,

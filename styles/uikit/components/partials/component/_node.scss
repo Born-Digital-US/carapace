@@ -128,19 +128,19 @@
     }
   }
 
-  @media #{$mobile} {
-    .node__author {
-      &:after {
-        display: none;
-      }
-    }
-
-    .node__author,
-    .node__pubdate {
-      margin: 0;
-      display: block;
-    }
-  }
+  // @media #{$mobile} {
+  //   .node__author {
+  //     &:after {
+  //       display: none;
+  //     }
+  //   }
+  //
+  //   .node__author,
+  //   .node__pubdate {
+  //     margin: 0;
+  //     display: block;
+  //   }
+  // }
 
   // Node links.
   &__links {

@@ -7,44 +7,6 @@ img > figcaption,
   display: block;
 }
 
-@media all and (min-width: 60.063em) {
-  img.align-left,
-  .field-type-image__figure.align-left,
-  .caption-img.align-left {
-    margin: 0 1rem 1rem 0;
-  }
-  img.align-right,
-  .field-type-image__figure.align-right,
-  .caption-img.align-right {
-    margin: 0 0 1rem 1rem;
-  }
-  img > figcaption,
-  .field-type-image__figure > figcaption,
-  .caption-img > figcaption {
-    display: table-caption;
-  }
-}
-
-@media all and (max-width: 60em) {
-  img.align-left, img.align-right,
-  .field-type-image__figure.align-left,
-  .field-type-image__figure.align-right,
-  .caption-img.align-left,
-  .caption-img.align-right {
-    float: none;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 1rem;
-  }
-}
-
-img.align-center,
-.field-type-image__figure.align-center,
-.caption-img.align-center {
-  margin-bottom: 1rem;
-}
-
 img[class*="align-"],
 .field-type-image__figure[class*="align-"],
 .caption-img[class*="align-"] {
@@ -57,6 +19,68 @@ img[class*="align-"],
   .field-type-image__figure[class*="align-"],
   .caption-img[class*="align-"] {
     display: inline-block;
+  }
+}
+
+@media all and (max-width: 45em) {
+  img[class*="align-"],
+  .field-type-image__figure[class*="align-"],
+  .caption-img[class*="align-"] {
+    margin-bottom: 1rem;
+  }
+  img[class*="align-"],
+  img[class*="align-"] img,
+  .field-type-image__figure[class*="align-"],
+  .field-type-image__figure[class*="align-"] img,
+  .caption-img[class*="align-"],
+  .caption-img[class*="align-"] img {
+    float: none;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  img > figcaption,
+  .field-type-image__figure > figcaption,
+  .caption-img > figcaption {
+    text-align: center;
+  }
+}
+
+@media all and (min-width: 45.063em) {
+  img > figcaption,
+  .field-type-image__figure > figcaption,
+  .caption-img > figcaption {
+    text-align: left;
+  }
+  img.align-left,
+  .field-type-image__figure.align-left,
+  .caption-img.align-left {
+    margin: 0 1rem 1rem 0;
+  }
+  img.align-right,
+  .field-type-image__figure.align-right,
+  .caption-img.align-right {
+    margin: 0 0 1rem 1rem;
+  }
+  img.align-center,
+  .field-type-image__figure.align-center,
+  .caption-img.align-center {
+    margin-bottom: 1rem;
+  }
+  img.align-center > figcaption,
+  .field-type-image__figure.align-center > figcaption,
+  .caption-img.align-center > figcaption {
+    text-align: center;
+  }
+  img.align-center,
+  img.align-center img,
+  .field-type-image__figure.align-center,
+  .field-type-image__figure.align-center img,
+  .caption-img.align-center,
+  .caption-img.align-center img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 

@@ -78,17 +78,6 @@
   display: block;
 }
 
-@media all and (max-width: 60em) {
-  .node .node__author:after {
-    display: none;
-  }
-  .node .node__author,
-  .node .node__pubdate {
-    margin: 0;
-    display: block;
-  }
-}
-
 .node__links {
   clear: both;
 }

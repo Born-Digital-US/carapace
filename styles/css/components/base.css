@@ -469,7 +469,7 @@ ul.inline li ol {
   padding: 0;
 }
 
-@media all and (max-width: 60em) {
+@media all and (min-width: 60em) {
   .list-multicolumn:before, .list-multicolumn:after {
     content: " ";
     display: table;
@@ -490,7 +490,7 @@ ul.inline li ol {
   }
 }
 
-@media all and (max-width: 60em) {
+@media all and (min-width: 60em) {
   .dl-horizontal dt {
     float: left;
     clear: left;

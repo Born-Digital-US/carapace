@@ -45,7 +45,7 @@
   display: block;
 }
 
-@media all and (max-width: 60em) {
+@media all and (min-width: 60em) {
   .comment__meta .comment__author:after {
     display: none;
   }

@@ -12,35 +12,6 @@ img,
     display: block;
   }
 
-  @media #{$wide} {
-    &.align-left {
-      @include output-rhythm(margin, 0 $medium $medium 0);
-    }
-
-    &.align-right {
-      @include output-rhythm(margin, 0 0 $medium $medium);
-    }
-
-    > figcaption {
-      display: table-caption;
-    }
-  }
-
-  @media #{$mobile} {
-    &.align-left,
-    &.align-right {
-      float: none;
-      text-align: center;
-      margin-left: auto;
-      margin-right: auto;
-      @include output-rhythm(margin-bottom, $medium);
-    }
-  }
-
-  &.align-center {
-    @include output-rhythm(margin-bottom, $medium);
-  }
-
   &[class*="align-"] {
     clear: both;
     display: block;
@@ -49,4 +20,52 @@ img,
       display: inline-block;
     }
   }
+
+  @media #{$mobile-isolate} {
+    &[class*="align-"] {
+      @include output-rhythm(margin-bottom, $medium);
+    }
+
+    &[class*="align-"],
+    &[class*="align-"] img {
+      float: none;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    > figcaption {
+      text-align: center;
+    }
+  }
+
+  @media #{$tablet} {
+    > figcaption {
+      text-align: left;
+    }
+
+    &.align-left {
+      @include output-rhythm(margin, 0 $medium $medium 0);
+    }
+
+    &.align-right {
+      @include output-rhythm(margin, 0 0 $medium $medium);
+    }
+
+    &.align-center {
+      @include output-rhythm(margin-bottom, $medium);
+
+      > figcaption {
+        text-align: center;
+      }
+    }
+
+    &.align-center,
+    &.align-center img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
 }

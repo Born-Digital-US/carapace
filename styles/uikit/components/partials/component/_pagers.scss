@@ -50,30 +50,15 @@
 }
 
 
-@media #{$mobile} {
-  .pager__items__first-previous,
-  .pager__items__num-pages,
-  .pager__items__next-last {
-    text-align: center;
-  }
-  .pager__items__first-previous,
-  .pager__items__next-last {
-    .pager__item {
-      display: inline;
-    }
-  }
+.pager__items__first-previous,
+.pager__items__num-pages,
+.pager__items__next-last {
+  text-align: center;
 }
-
-
-@media #{$wide} {
-  .pager__items__first-previous,
-  .pager__items__num-pages,
-  .pager__items__next-last {
-    display: inline-block;
-  }
-
-  .pager__items__num-pages {
-    text-align: center;
+.pager__items__first-previous,
+.pager__items__next-last {
+  .pager__item {
+    display: inline;
   }
 }
 

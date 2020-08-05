@@ -1104,7 +1104,7 @@ div[class*="field--widget-entity-reference"] div.clearfix:last-child .placeholde
   }
 }
 
-@media all and (max-width: 60em) {
+@media all and (min-width: 60em) {
   .pr-navbar .block-search {
     padding: 0.375rem 0;
   }
