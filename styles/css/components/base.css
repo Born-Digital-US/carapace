@@ -36,12 +36,6 @@
   transition: all, 0.2s, ease-in-out;
 }
 
-.grid-view {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-gap: 1em;
-}
-
 /**
  * Elements
  * - set element global styles, basically whenever this element appears
