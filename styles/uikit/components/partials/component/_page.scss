@@ -3,6 +3,14 @@
  *  - for page.html.twig and region markup.
  ============================================================================ */
 
+ // override homepage .l-rw to make it conform to site max-width
+ .path-frontpage {
+   .l-rw {
+     max-width: $max-width;
+   }
+ }
+
+
 // Regions wrapper.
 .regions {
   border: $global-padding solid;

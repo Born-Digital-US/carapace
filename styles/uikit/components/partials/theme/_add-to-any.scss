@@ -21,13 +21,14 @@
   }
 }
 
-// Override A2A to use theme colors, round icons
+// Override A2A to use round icons
 .addtoany_list.a2a_kit {
   display: inline-block;
   @include output-rhythm(margin-bottom, $x-large);
 
   a > .a2a_svg {
-    background-color: currentColor !important;
+    // Uncomment the next line to use theme colors
+    // background-color: currentColor !important;
     border-radius: 50%;
     margin: 0.125em;
   }

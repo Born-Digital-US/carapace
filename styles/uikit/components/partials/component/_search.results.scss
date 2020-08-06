@@ -140,13 +140,13 @@
 
 // Homepage Teaser
 @media #{$tablet} {
-  .path-frontpage {
+  .path-frontpage .view-list {
     .node__content {
       display: flex;
 
       & >:first-child:not(:empty) {
         flex-shrink: 0;
-        padding-right: $global-padding-percent;
+        padding-right: $global-padding * 4;
       }
 
       .field-type-image__item {
@@ -159,7 +159,7 @@
 }
 
 @media #{$wide} {
-  .path-frontpage {
+  .path-frontpage .view-list {
     .node__content {
       .field-type-image__item {
         a {
@@ -171,11 +171,13 @@
 }
 
 // Search views List/Grid
-.view-list,
-.view-grid {
-  .node__title-link {
-    font-size: $base-font-size;
-    line-height: 1.3;
+body:not(.path-frontpage) {
+  .view-list,
+  .view-grid {
+    .node__title-link {
+      font-size: $base-font-size;
+      line-height: 1.3;
+    }
   }
 }
 
@@ -198,7 +200,7 @@
 
       & >:first-child:not(:empty) {
         flex-shrink: 0;
-        padding-right: $global-padding-percent / 2;
+        padding-right: $global-padding * 4;
       }
 
       .field-type-image__item {

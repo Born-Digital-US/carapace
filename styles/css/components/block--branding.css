@@ -75,8 +75,8 @@
   }
 }
 
-.pr-footer .site-branding__logo-img {
-  max-width: 5rem;
+.pr-footer .site-branding__logo-link {
+  max-width: 30%;
 }
 
 .pr-footer .site-branding__name {

@@ -44,4 +44,5 @@ $wide           : "all and (min-width: 60.063em)";
 $huge           : "all and (min-width: 120.063em)";
 $mobile         : "all and (min-width: 60em)";
 
-$max-width : "all and (max-width: 75em)";
+// Site max-width -- should match theme setting in Appearances > Carapace Settings > Layout
+$max-width      : 80em;

@@ -1,4 +1,4 @@
-/* Layout CSS for: page.html.twig, generated: Mon, 03 Aug 20 20:35:26 +0000 */
+/* Layout CSS for: page.html.twig, generated: Thu, 06 Aug 20 19:08:48 +0000 */
 
 .page {
   display: flex;
@@ -198,5 +198,5 @@
 }
 /* End breakpoint */
 
-.l-rw { max-width: 85em; }
+.l-rw { max-width: 80em; }
 .l-attribution { -webkit-order: 100; -ms-flex-order: 100; order: 100 ;}

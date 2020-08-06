@@ -84,8 +84,8 @@
 
 .pr-footer {
   .site-branding {
-    &__logo-img {
-      max-width: 5rem;
+    &__logo-link {
+      max-width: 30%;
     }
     &__name {
       @include output-rhythm(font-size, $medium * 1.5);

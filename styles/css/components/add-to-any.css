@@ -21,7 +21,6 @@
 }
 
 .addtoany_list.a2a_kit a > .a2a_svg {
-  background-color: currentColor !important;
   border-radius: 50%;
   margin: 0.125em;
 }

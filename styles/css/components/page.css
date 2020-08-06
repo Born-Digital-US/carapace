@@ -2,6 +2,10 @@
  * Page
  *  - for page.html.twig and region markup.
  ============================================================================ */
+.path-frontpage .l-rw {
+  max-width: 80em;
+}
+
 .regions {
   border: 0.625em solid;
   border-bottom: 0;
@@ -167,7 +171,7 @@
 
 @media all and (min-width: 45.063em) {
   .pr-main__sidebar-first + .pr-main__sidebar-second {
-    padding-left: 8%;
+    padding-left: 6%;
   }
 }
 
