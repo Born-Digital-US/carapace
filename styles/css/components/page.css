@@ -202,7 +202,6 @@
 }
 
 .pr-footer__footer-first .block__inner {
-  margin-right: 2rem;
   padding-bottom: 1.625rem;
 }
 
@@ -226,6 +225,13 @@
   -webkit-column-count: 2;
      -moz-column-count: 2;
           column-count: 2;
+}
+
+@media all and (min-width: 45.063em) {
+  .pr-footer__footer-first .block__inner {
+    margin-right: 2rem;
+    padding-right: 1.625rem;
+  }
 }
 
 .pr-footercols + .pr-footer .block {

@@ -1006,7 +1006,8 @@ form .marker {
  *  - action link buttons
  ============================================================================ */
 button,
-.button {
+.button,
+.view-footer .node__links .node-readmore__link {
   color: #ffffff;
   background-color: #0c6170;
   border-color: #0c6170;
@@ -1017,20 +1018,24 @@ button,
 
 button:hover, button:focus,
 .button:hover,
-.button:focus {
+.button:focus,
+.view-footer .node__links .node-readmore__link:hover,
+.view-footer .node__links .node-readmore__link:focus {
   opacity: 0.9;
   color: #ffffff;
   background-color: #0c6170;
 }
 
 button:visited,
-.button:visited {
+.button:visited,
+.view-footer .node__links .node-readmore__link:visited {
   color: #ffffff;
   background-color: #0c6170;
 }
 
 button[disabled]:hover,
-.button[disabled]:hover {
+.button[disabled]:hover,
+.view-footer .node__links .node-readmore__link[disabled]:hover {
   opacity: 1;
 }
 
@@ -1377,6 +1382,14 @@ body:before {
 
 .search-results__header {
   border-color: #e5e5e5;
+}
+
+.view-grid__link--is-active {
+  color: #1a2747;
+}
+
+.view-grid__link--is-active:hover, .view-grid__link--is-active:focus {
+  color: #0e7e92;
 }
 
 .facet-item__count {

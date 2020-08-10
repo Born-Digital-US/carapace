@@ -1253,7 +1253,8 @@ form .marker {
  ============================================================================ */
 
 button,
-.button {
+.button,
+.view-footer .node__links .node-readmore__link {
   color: $button-color;
   background-color: $button-background-color;
   border-color: $button-border-color;
@@ -1691,6 +1692,14 @@ body {
 
 .search-results__header {
   border-color: $border-color;
+}
+
+.view-grid__link--is-active {
+  color: $link-alt-active-color;
+
+  &:hover, &:focus {
+    color: $link-alt-color;
+  }
 }
 
 .facet-item__count {

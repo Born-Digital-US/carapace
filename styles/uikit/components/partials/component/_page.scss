@@ -299,7 +299,6 @@
 
     &-first {
       .block__inner {
-        @include output-rhythm(margin-right, $xx-large);
         @include output-rhythm(padding-bottom, $x-large);
       }
 
@@ -322,6 +321,15 @@
     &-second {
       .menu {
         column-count: 2;
+      }
+    }
+
+    @media #{$tablet} {
+      &-first {
+        .block__inner {
+          @include output-rhythm(margin-right, $xx-large);
+          @include output-rhythm(padding-right, $x-large);
+        }
       }
     }
   }
