@@ -224,26 +224,26 @@
 
 @media all and (min-width: 45.063em) {
   .path-frontpage .view-list .node__content,
-  .path-browse-content .view-list .node__content {
+  .path-browse-collections .view-list .node__content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
   .path-frontpage .view-list .node__content > :first-child:not(:empty),
-  .path-browse-content .view-list .node__content > :first-child:not(:empty) {
+  .path-browse-collections .view-list .node__content > :first-child:not(:empty) {
     -ms-flex-negative: 0;
         flex-shrink: 0;
     padding-right: 2.5em;
   }
   .path-frontpage .view-list .node__content .field-type-image__item a,
-  .path-browse-content .view-list .node__content .field-type-image__item a {
+  .path-browse-collections .view-list .node__content .field-type-image__item a {
     width: 18rem;
   }
 }
 
 @media all and (min-width: 60.063em) {
   .path-frontpage .view-list .node__content .field-type-image__item a,
-  .path-browse-content .view-list .node__content .field-type-image__item a {
+  .path-browse-collections .view-list .node__content .field-type-image__item a {
     width: 23rem;
   }
 }

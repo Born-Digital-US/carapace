@@ -189,7 +189,7 @@
 // Homepage, Browse Content Teaser
 @media #{$tablet} {
   .path-frontpage,
-  .path-browse-content {
+  .path-browse-collections {
     .view-list {
       .node__content {
         display: flex;
@@ -211,7 +211,7 @@
 
 @media #{$wide} {
   .path-frontpage,
-  .path-browse-content {
+  .path-browse-collections {
     .view-list {
       .node__content {
         .field-type-image__item {
