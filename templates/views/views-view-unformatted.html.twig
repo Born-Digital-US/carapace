@@ -11,13 +11,11 @@
  * - view: The view object.
  * - default_row_class: A flag indicating whether default classes should be
  *   used on rows.
-*
- * ToDo: swap between "view-list" and "view-grid" class on List/Grid toggle
  *
  * @see template_preprocess_views_view_unformatted()
  */
 #}
-<div class="view-list {{ additional_classes }}">
+<div class="{{ additional_classes }}">
 
 {% if title %}
   <h3 class="view-title">{{ title }}</h3>
