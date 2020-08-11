@@ -187,6 +187,23 @@
 }
 
 // Homepage, Browse Content Teaser
+.path-browse-collections {
+  .view-content > .view-grid {
+    grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
+  }
+}
+
+@media #{$mobile-isolate} {
+  .path-browse-collections {
+    .view-content > .view-grid {
+      h2 {
+        font-size: $base-font-size;
+        line-height: $base-line-height;
+      }
+    }
+  }
+}
+
 @media #{$tablet} {
   .path-frontpage,
   .path-browse-collections {
@@ -205,6 +222,9 @@
           }
         }
       }
+    }
+    .view-content > .view-grid {
+      grid-template-columns: repeat(auto-fill, minmax(18.65rem, 1fr));
     }
   }
 }

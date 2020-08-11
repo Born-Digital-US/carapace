@@ -1297,6 +1297,17 @@ div[class*="field--widget-entity-reference"] div.clearfix:last-child .placeholde
   }
 }
 
+.path-browse-collections .view-content > .view-grid {
+  grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
+}
+
+@media all and (max-width: 45em) {
+  .path-browse-collections .view-content > .view-grid h2 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
 @media all and (min-width: 45.063em) {
   .path-frontpage .view-list .node__content,
   .path-browse-collections .view-list .node__content {
@@ -1313,6 +1324,10 @@ div[class*="field--widget-entity-reference"] div.clearfix:last-child .placeholde
   .path-frontpage .view-list .node__content .field-type-image__item a,
   .path-browse-collections .view-list .node__content .field-type-image__item a {
     width: 18rem;
+  }
+  .path-frontpage .view-content > .view-grid,
+  .path-browse-collections .view-content > .view-grid {
+    grid-template-columns: repeat(auto-fill, minmax(18.65rem, 1fr));
   }
 }
 
