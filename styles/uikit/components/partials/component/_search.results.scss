@@ -174,7 +174,7 @@
 
 .view-content > .view-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(5.75rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(6.5rem, 1fr));
   grid-gap: 1rem;
 
   .node__details *:not(:first-child) {
@@ -182,7 +182,7 @@
   }
 
   @media #{$tablet} {
-    grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
   }
 }
 

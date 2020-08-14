@@ -288,8 +288,7 @@
   &__rw {
     border: 0;
     // more spacious footer
-    @include output-rhythm(padding-top, $x-large);
-    @include output-rhythm(padding-bottom, $x-large);
+    @include output-rhythm(padding, $x-large $global-padding);
   }
 
   &__footer {
@@ -346,5 +345,6 @@
 .pr-disclaimer {
   &__rw {
     border: 0;
+    @include output-rhythm(padding, 0 $global-padding);
   }
 }
