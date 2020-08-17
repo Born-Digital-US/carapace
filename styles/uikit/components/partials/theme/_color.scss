@@ -1269,11 +1269,7 @@ button,
     opacity: 0.9;
     color: $button-hover-color;
     background-color: $button-background-hover-color;
-  }
-
-  &:visited {
-    color: $button-color;
-    background-color: $button-background-color;
+    border-color: $button-border-color;
   }
 
   &[disabled] {

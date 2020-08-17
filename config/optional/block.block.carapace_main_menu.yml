@@ -15,7 +15,7 @@ provider: null
 plugin: 'system_menu_block:main'
 settings:
   id: 'system_menu_block:main'
-  label: 'Main menu'
+  label: 'Menu'
   provider: system
   label_display: '1'
   level: 1

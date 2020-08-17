@@ -1024,13 +1024,7 @@ button:hover, button:focus,
   opacity: 0.9;
   color: #ffffff;
   background-color: #0c6170;
-}
-
-button:visited,
-.button:visited,
-.view-footer .node__links .node-readmore__link:visited {
-  color: #ffffff;
-  background-color: #0c6170;
+  border-color: #0c6170;
 }
 
 button[disabled]:hover,
