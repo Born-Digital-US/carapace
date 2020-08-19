@@ -27,7 +27,7 @@
 
   &__header {
     @include output-rhythm(margin, $large 0);
-    @include output-rhythm(padding, $large 0);
+    @include output-rhythm(padding, $medium 0);
     border-top: $border-width $border-style;
     border-bottom: $border-width $border-style;
 
@@ -38,12 +38,16 @@
 
     form {
       margin-bottom: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: center;
 
       > * {
-        @include output-rhythm(margin-bottom, $large);
+        @include output-rhythm(margin, $xx-small $xx-large $xx-small 0);
 
         &:last-child {
-          margin-bottom: 0;
+          margin-right: 0;
         }
       }
     }
@@ -61,7 +65,7 @@
     }
 
     .display_selector__container > *:first-child {
-      @include output-rhythm(padding-right, $large);
+      @include output-rhythm(padding-right, $xx-small);
     }
 
     .pager {
@@ -74,16 +78,13 @@
 
     @media #{$wide} {
       form {
-        display: flex;
         justify-content: flex-end;
-        align-items: center;
 
         > * {
-          margin: 0;
-          @include output-rhythm(margin-right, $large);
+          @include output-rhythm(margin, $xx-small 0 $xx-small $xxx-large);
 
-          &:last-child {
-            margin-right: 0;
+          &:first-child {
+            margin-left: 0;
           }
         }
       }
@@ -141,8 +142,31 @@
 }
 
 // Search views List/Grid
+.view-list,
+.view-grid {
+  .node__details {
+    .field, .node__title {
+      margin-bottom: 0;
+    }
+
+    h2 {
+      @include output-rhythm(margin-top, $large);
+
+      a {
+        text-decoration: none;
+
+        &:hover, &:focus {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
 .view-list {
   .node__content {
+    @include output-rhythm(padding, $x-large 0);
+
     .field-type-image__item {
       a {
         display: block;
@@ -175,7 +199,7 @@
 .view-content > .view-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(6.5rem, 1fr));
-  grid-gap: 1rem;
+  @include output-rhythm(grid-gap, $xxx-large $large);
 
   .node__details *:not(:first-child) {
     display: none;

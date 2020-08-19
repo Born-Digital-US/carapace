@@ -205,9 +205,7 @@
 /* View Modes to support nodes in views and other lists. */
 
 .node--view-mode-teaser {
-  // border-bottom: $border-width $border-style;
-
-  @include output-rhythm(margin-bottom, $large);
+  // @include output-rhythm(margin-bottom, $large);
   @include output-rhythm(padding-bottom, $small);
 }
 
