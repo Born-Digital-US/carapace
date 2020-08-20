@@ -1583,11 +1583,4 @@ input.cke_dialog_ui_input_password {
   color: #1a2747 !important;
   border-color: #e5e5e5 !important;
 }
-
-/**
- * Hover CSS effects
- ============================================================================ */
-.node :not(.field-type-image):not([class*="__title"]) a:before {
-  background-color: #0c6170;
-}
 /*# sourceMappingURL=color.css.map */

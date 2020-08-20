@@ -1934,9 +1934,3 @@ input.cke_dialog_ui_input_password {
 /**
  * Hover CSS effects
  ============================================================================ */
-
-.node :not(.field-type-image):not([class*="__title"]) a {
-  &:before {
-    background-color: $link-color;
-  }
-}
