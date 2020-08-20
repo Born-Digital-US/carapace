@@ -1321,6 +1321,14 @@ div[class*="field--widget-entity-reference"] div.clearfix:last-child .placeholde
   display: none;
 }
 
+.view-content > .view-grid .field-type-image__item {
+  width: 100%;
+}
+
+.view-content > .view-grid .field-type-image__item img {
+  width: 100%;
+}
+
 @media all and (min-width: 45.063em) {
   .view-content > .view-grid {
     grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));

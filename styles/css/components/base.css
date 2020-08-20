@@ -224,10 +224,6 @@ a:hover, a:focus {
   text-decoration: underline;
 }
 
-a img {
-  border: 0;
-}
-
 ul,
 ol,
 dl {
