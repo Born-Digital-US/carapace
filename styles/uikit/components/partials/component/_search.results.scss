@@ -6,7 +6,7 @@
   border-radius: $border-radius;
 }
 
-.view-header {
+.view-header, .view__collection-count {
   font-weight: $font-weight-bold;
 }
 
@@ -219,6 +219,20 @@
 }
 
 // Homepage, Browse Content Teaser
+.path-frontpage,
+.path-browse-collections {
+  .node__details {
+    display: flex;
+    flex-direction: column;
+    @include output-rhythm(padding-bottom, $medium);
+
+    > *:nth-child(2) {
+      flex-grow: 1;
+      @include output-rhythm(margin-bottom, $medium);
+    }
+  }
+}
+
 .path-browse-collections {
   .view-content > .view-grid {
     grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
