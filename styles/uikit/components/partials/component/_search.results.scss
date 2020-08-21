@@ -237,6 +237,10 @@
   .view-content > .view-grid {
     grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
   }
+
+  .search-results__header .sort__container {
+    display: none;
+  }
 }
 
 @media #{$mobile-isolate} {
