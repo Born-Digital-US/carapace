@@ -90,6 +90,14 @@
       }
     }
   }
+
+  &__results {
+    @media #{$wide} {
+      display: grid;
+      grid-gap: $global-padding-percent;
+      grid-template-columns: 1fr 4fr;
+    }
+  }
 }
 
 .facets-widget-links {
@@ -248,7 +256,7 @@
 }
 
 // facets
-.facets--mobile {
+.search-results__facets--mobile {
   summary {
     margin-bottom: 0;
     padding-left: 0;
@@ -259,9 +267,15 @@
       content: "+";
     }
   }
+
+  &[open] {
+    summary:after {
+      content: "-";
+    }
+  }
 }
 
-.facets--wide {
+.search-results__facets--wide {
   display: none;
 }
 
@@ -315,11 +329,11 @@
     }
   }
 
-  .facets--wide {
+  .search-results__facets--wide {
     display: block;
   }
 
-  .facets--mobile {
+  .search-results__facets--mobile {
     display: none;
   }
 }

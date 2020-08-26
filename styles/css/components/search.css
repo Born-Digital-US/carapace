@@ -149,6 +149,14 @@
   }
 }
 
+@media all and (min-width: 60.063em) {
+  .search-results__results {
+    display: grid;
+    grid-gap: 6%;
+    grid-template-columns: 1fr 4fr;
+  }
+}
+
 .facets-widget-links ul {
   padding-left: 0;
 }
@@ -293,7 +301,7 @@
   display: none;
 }
 
-.facets--mobile summary {
+.search-results__facets--mobile summary {
   margin-bottom: 0;
   padding-left: 0;
   display: -webkit-box;
@@ -304,11 +312,15 @@
           justify-content: space-between;
 }
 
-.facets--mobile summary:after {
+.search-results__facets--mobile summary:after {
   content: "+";
 }
 
-.facets--wide {
+.search-results__facets--mobile[open] summary:after {
+  content: "-";
+}
+
+.search-results__facets--wide {
   display: none;
 }
 
@@ -347,10 +359,10 @@
   .path-browse-collections .view-list .node__content .field-type-image__item a {
     width: 23rem;
   }
-  .facets--wide {
+  .search-results__facets--wide {
     display: block;
   }
-  .facets--mobile {
+  .search-results__facets--mobile {
     display: none;
   }
 }
