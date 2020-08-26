@@ -1226,7 +1226,7 @@ div[class*="field--widget-entity-reference"] div.clearfix:last-child .placeholde
   .search-results__results {
     display: grid;
     grid-gap: 6%;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 3fr;
   }
 }
 
@@ -1317,31 +1317,39 @@ div[class*="field--widget-entity-reference"] div.clearfix:last-child .placeholde
   }
 }
 
-.view-content > .view-grid {
+.view-grid .search-results__content {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(6.5rem, 1fr));
   grid-gap: 2.625rem 1.25rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
-.view-content > .view-grid h2 {
+.view-grid .search-results__content h2 {
   font-size: 1.25rem;
   line-height: 1.5rem;
 }
 
-.view-content > .view-grid .node__details *:not(:first-child) .field__item {
+.view-grid .search-results__content .node__details .field:not(:first-child) {
   display: none;
 }
 
-.view-content > .view-grid .field-type-image__item {
+.view-grid .search-results__content .field-type-image__item {
   width: 100%;
 }
 
-.view-content > .view-grid .field-type-image__item img {
+.view-grid .search-results__content .field-type-image__item img {
   width: 100%;
+}
+
+.view-grid .search-results__content .view__collection-count {
+  font-weight: normal;
+  margin-top: 0.75rem;
 }
 
 @media all and (min-width: 45.063em) {
-  .view-content > .view-grid {
+  .view-grid .search-results__content {
     grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
   }
 }
@@ -1366,7 +1374,7 @@ div[class*="field--widget-entity-reference"] div.clearfix:last-child .placeholde
   margin-bottom: 1rem;
 }
 
-.path-browse-collections .view-content > .view-grid {
+.path-browse-collections .view-grid .search-results__content {
   grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
 }
 
@@ -1398,7 +1406,7 @@ div[class*="field--widget-entity-reference"] div.clearfix:last-child .placeholde
 }
 
 @media all and (max-width: 45em) {
-  .path-browse-collections .view-content > .view-grid h2 {
+  .path-browse-collections .view-grid .search-results__content h2 {
     font-size: 16px;
     line-height: 24px;
   }
@@ -1421,8 +1429,8 @@ div[class*="field--widget-entity-reference"] div.clearfix:last-child .placeholde
   .path-browse-collections .view-list .node__content .field-type-image__item a {
     width: 18rem;
   }
-  .path-frontpage .view-content > .view-grid,
-  .path-browse-collections .view-content > .view-grid {
+  .path-frontpage .view-grid .search-results__content,
+  .path-browse-collections .view-grid .search-results__content {
     grid-template-columns: repeat(auto-fill, minmax(18.65rem, 1fr));
   }
 }
