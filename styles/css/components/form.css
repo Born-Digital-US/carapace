@@ -1374,10 +1374,6 @@ div[class*="field--widget-entity-reference"] div.clearfix:last-child .placeholde
   margin-bottom: 1rem;
 }
 
-.path-browse-collections .view-grid .search-results__content {
-  grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
-}
-
 .path-browse-collections .search-results__header .sort__container {
   display: none;
 }
@@ -1431,7 +1427,7 @@ div[class*="field--widget-entity-reference"] div.clearfix:last-child .placeholde
   }
   .path-frontpage .view-grid .search-results__content,
   .path-browse-collections .view-grid .search-results__content {
-    grid-template-columns: repeat(auto-fill, minmax(18.65rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(19.75rem, 1fr));
   }
 }
 
