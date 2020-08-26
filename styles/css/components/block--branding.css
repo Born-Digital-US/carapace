@@ -30,6 +30,7 @@
 .site-branding__logo-img {
   -webkit-box-shadow: none;
           box-shadow: none;
+  border: none;
 }
 
 .site-branding__text {

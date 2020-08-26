@@ -124,6 +124,13 @@ img {
 }
 
 
+iframe,
+video,
+.openseadragon-viewer {
+  border: $border-width $border-style $base-color;
+}
+
+
 // Flexible responsive media elements.
 img,
 embed,
