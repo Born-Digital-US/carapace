@@ -201,7 +201,11 @@
   grid-template-columns: repeat(auto-fill, minmax(6.5rem, 1fr));
   @include output-rhythm(grid-gap, $xxx-large $large);
 
-  .node__details *:not(:first-child) {
+  h2 {
+    @include adjust-font-size-to($large);
+  }
+
+  .node__details *:not(:first-child) .field__item {
     display: none;
   }
 
@@ -221,7 +225,7 @@
 // Homepage, Browse Content Teaser
 .path-frontpage,
 .path-browse-collections {
-  .node__details {
+  .view-list .node__details {
     display: flex;
     flex-direction: column;
     @include output-rhythm(padding-bottom, $medium);
