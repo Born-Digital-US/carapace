@@ -247,6 +247,24 @@
   }
 }
 
+// facets
+.facets--mobile {
+  summary {
+    margin-bottom: 0;
+    padding-left: 0;
+    display: flex;
+    justify-content: space-between;
+
+    &:after {
+      content: "+";
+    }
+  }
+}
+
+.facets--wide {
+  display: none;
+}
+
 @media #{$mobile-isolate} {
   .path-browse-collections {
     .view-content > .view-grid {
@@ -295,6 +313,14 @@
         }
       }
     }
+  }
+
+  .facets--wide {
+    display: block;
+  }
+
+  .facets--mobile {
+    display: none;
   }
 }
 

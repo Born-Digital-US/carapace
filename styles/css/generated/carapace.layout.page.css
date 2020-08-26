@@ -1,4 +1,4 @@
-/* Layout CSS for: page.html.twig, generated: Thu, 06 Aug 20 19:08:48 +0000 */
+/* Layout CSS for: page.html.twig, generated: Wed, 26 Aug 20 13:10:12 +0000 */
 
 .page {
   display: flex;
@@ -53,14 +53,32 @@
   width: 50%;
 }
 
-.pr-main .hr--2-3 .l-r,
-.pr-main .arc--3 .l-r:nth-child(2) {
+.pr-main .hr--1-2 .l-r {
   width: 25%;
 }
 
-.pr-main .hr--2-3 .l-r:last-child,
-.pr-main .arc--3 .l-r:last-child {
+.pr-main .hr--1-2 .l-r:last-child {
   width: 75%;
+}
+
+.pr-main .hr--1-3 .l-r {
+  width: 50%;
+}
+
+.pr-main .hr--2-3 .l-r {
+  width: 75%;
+}
+
+.pr-main .hr--2-3 .l-r:last-child {
+  width: 25%;
+}
+
+.pr-main .arc--3 .l-r {
+  width: 25%;
+}
+
+.pr-main .arc--3 .l-r:nth-child(2) {
+  width: 50%;
 }
 
 .pr-subfeatures .hr--2-3 .l-r,
@@ -135,14 +153,32 @@
   width: 50%;
 }
 
-.pr-main .hr--2-3 .l-r,
-.pr-main .arc--3 .l-r:nth-child(2) {
-  width: 33.33333%;
+.pr-main .hr--1-2 .l-r {
+  width: 25%;
 }
 
-.pr-main .hr--2-3 .l-r:last-child,
-.pr-main .arc--3 .l-r:last-child {
-  width: 66.66667%;
+.pr-main .hr--1-2 .l-r:last-child {
+  width: 75%;
+}
+
+.pr-main .hr--1-3 .l-r {
+  width: 50%;
+}
+
+.pr-main .hr--2-3 .l-r {
+  width: 75%;
+}
+
+.pr-main .hr--2-3 .l-r:last-child {
+  width: 25%;
+}
+
+.pr-main .arc--3 .l-r {
+  width: 25%;
+}
+
+.pr-main .arc--3 .l-r:nth-child(2) {
+  width: 50%;
 }
 
 .pr-subfeatures .hr--3-4 .l-r {
@@ -198,5 +234,5 @@
 }
 /* End breakpoint */
 
-.l-rw { max-width: 80em; }
+.l-rw { max-width: 85em; }
 .l-attribution { -webkit-order: 100; -ms-flex-order: 100; order: 100 ;}

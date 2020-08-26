@@ -168,8 +168,7 @@ legend {}
 
 // Details.
 details {
-  border: $form-border-width $form-border-style;
-  border-radius: $border-radius;
+  border-bottom: $form-border-width $form-border-style;
   display: block; // Firefox seems to need this?
   @include output-rhythm(margin, $medium 0);
   overflow-y: hidden;
@@ -207,7 +206,6 @@ summary {
   cursor: pointer;
   display: block; // Firefox seems to need this?
   @include output-rhythm(padding, $x-small);
-  outline: 0;
 }
 
 

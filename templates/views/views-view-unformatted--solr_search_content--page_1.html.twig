@@ -21,10 +21,17 @@
   <h3 class="view-title">{{ title }}</h3>
 {% endif %}
   <aside class="internal">
-    <h3>Internal Sidebar</h3>
-    {% for facet in facets.views_page__solr_search_content__page_1 %}
-      {{ drupal_block(facet.id,  {label: facet.label|t}) }}
-    {% endfor %}
+    <div class="facets--wide">
+      {% for facet in facets.views_block__solr_search_content__block_1 %}
+        {{ drupal_block(facet.id,  {label: facet.label|t}) }}
+      {% endfor %}
+    </div>
+    <details class="facets--mobile">
+      <summary class="h5">Refine Search</summary>
+      {% for facet in facets.views_block__solr_search_content__block_1 %}
+        {{ drupal_block(facet.id,  {label: facet.label|t}) }}
+      {% endfor %}
+    </details>
   </aside>
   <section>
   {% for row in rows %}
