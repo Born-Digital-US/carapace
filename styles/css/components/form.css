@@ -634,17 +634,18 @@ button:hover, button:focus,
   display: inline-block;
 }
 
-.button-action:before {
+.button-action:after {
   font-family: FontAwesome, sans-serif;
-  content: "";
+  content: "";
   vertical-align: middle;
   font-size: 0.75rem;
+  margin-left: 0.25rem;
   padding-right: 0.25rem;
   line-height: 2rem;
   display: none;
 }
 
-.fa-loaded .button-action:before {
+.fa-loaded .button-action:after {
   display: inline-block;
 }
 

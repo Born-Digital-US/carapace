@@ -83,11 +83,12 @@ button,
   display: inline-block;
   //vertical-align: bottom;
 
-  &:before {
+  &:after {
     font-family: $icon-font;
-    content: $button-action-icon;
+    content: $fa-var-download;
     vertical-align: middle;
     @include output-rhythm('font-size', $small);
+    @include output-rhythm(margin-left, 4px);
     @include output-rhythm(padding-#{$flow-to}, 4px);
     @include output-rhythm(line-height, $form_input_button_select_height);
 

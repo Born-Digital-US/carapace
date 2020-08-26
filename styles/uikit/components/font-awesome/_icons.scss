@@ -28,7 +28,7 @@
 .#{$fa-css-prefix}-file-o:before { content: $fa-var-file-o; }
 .#{$fa-css-prefix}-clock-o:before { content: $fa-var-clock-o; }
 .#{$fa-css-prefix}-road:before { content: $fa-var-road; }
-.#{$fa-css-prefix}-download:before { content: $fa-var-download; }
+.#{$fa-css-prefix}-download:after { content: $fa-var-download; }
 .#{$fa-css-prefix}-arrow-circle-o-down:before { content: $fa-var-arrow-circle-o-down; }
 .#{$fa-css-prefix}-arrow-circle-o-up:before { content: $fa-var-arrow-circle-o-up; }
 .#{$fa-css-prefix}-inbox:before { content: $fa-var-inbox; }

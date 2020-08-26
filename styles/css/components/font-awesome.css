@@ -316,7 +316,7 @@
   content: "";
 }
 
-.fa-download:before {
+.fa-download:after {
   content: "";
 }
 
