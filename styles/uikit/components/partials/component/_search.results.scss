@@ -172,7 +172,7 @@
 }
 
 .view-list {
-  .node__content {
+  .node__content:not(.compound) {
     @include output-rhythm(padding, $x-large 0);
 
     .field-type-image__item {
