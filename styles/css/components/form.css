@@ -1289,16 +1289,16 @@ div[class*="field--widget-entity-reference"] div.clearfix:last-child .placeholde
   text-decoration: underline;
 }
 
-.view-list .node__content {
+.view-list .node__content:not(.compound) {
   padding: 1.625rem 0;
 }
 
-.view-list .node__content .field-type-image__item a {
+.view-list .node__content:not(.compound) .field-type-image__item a {
   display: block;
   width: 100%;
 }
 
-.view-list .node__content .field-type-image__item img {
+.view-list .node__content:not(.compound) .field-type-image__item img {
   width: 100%;
 }
 
