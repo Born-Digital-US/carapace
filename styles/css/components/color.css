@@ -25,6 +25,16 @@ a:hover, a:focus {
   color: #0c6170;
 }
 
+img {
+  border-color: #e5e5e5;
+}
+
+iframe,
+video,
+.openseadragon-viewer {
+  border-color: #000000;
+}
+
 blockquote {
   border-color: #e5e5e5;
 }

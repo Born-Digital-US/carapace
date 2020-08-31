@@ -186,7 +186,7 @@
     }
   }
 
-  @media #{$wide} {
+  @media #{$tablet} {
     .node__content {
       display: flex;
 
@@ -267,6 +267,7 @@
 
     &:after {
       content: "+";
+      float: right;
     }
   }
 

@@ -39,6 +39,20 @@ a {
 }
 
 
+// Media
+img {
+  @if $button-box-shadow != false {
+    border-color: $border-color;
+  }
+}
+
+iframe,
+video,
+.openseadragon-viewer {
+  border-color: $base-color;
+}
+
+
 // Blockquotes, Bootstrap style.
 blockquote {
   border-color: $border-color; // LTR
