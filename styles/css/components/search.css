@@ -228,7 +228,7 @@
   width: 100%;
 }
 
-@media all and (min-width: 60.063em) {
+@media all and (min-width: 45.063em) {
   .view-list .node__content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -318,6 +318,7 @@
 
 .search-results__facets--mobile summary:after {
   content: "+";
+  float: right;
 }
 
 .search-results__facets--mobile[open] summary:after {

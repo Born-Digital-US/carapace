@@ -118,7 +118,8 @@ img {
   display: inline-block;
 
   @if $button-box-shadow != false {
-    border: $border-width $border-style $border-color-light;
+    border-width: $border-width;
+    border-style: $border-style;
     box-shadow: $button-box-shadow;
   }
 }
@@ -127,7 +128,8 @@ img {
 iframe,
 video,
 .openseadragon-viewer {
-  border: $border-width $border-style $base-color;
+  border-width: $border-width;
+  border-style: $border-style;
 }
 
 
