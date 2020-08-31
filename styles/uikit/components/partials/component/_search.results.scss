@@ -172,7 +172,7 @@
 }
 
 .view-list {
-  .node__content:not(.compound) {
+  .node__content {
     @include output-rhythm(padding, $x-large 0);
 
     .field-type-image__item {
@@ -187,7 +187,7 @@
   }
 
   @media #{$tablet} {
-    .node__content {
+    .node__content:not(.compound) {
       display: flex;
 
       & >:first-child:not(:empty) {
